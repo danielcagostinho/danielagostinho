@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { isMobile } from "react-device-detect";
 
-// import NavBar from "./components/NavBar/NavBar";
-// import MobileNavBar from "./components/MobileNavBar/MobileNavBar";
+import NavBar from "./components/NavBar/NavBar";
+import MobileNavBar from "./components/MobileNavBar/MobileNavBar";
 import AboutSection from "./components/AboutSection/AboutSection";
-// import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
-// import Projects from "./components/Projects/Projects";
-// import ContactSection from "./components/ContactSection/ContactSection";
+import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
+import Projects from "./components/Projects/Projects";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 import avatar from "./assets/avatar.jpg";
 import headerImage from "./assets/header-image.svg";
@@ -109,11 +109,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* {isMobile ? (
+        {isMobile ? (
           <MobileNavBar />
         ) : (
           <NavBar showName={this.state.isNameDisplayed} />
-        )} */}
+        )}
         <AboutSection
           avatar={avatar}
           headerImage={headerImage}
@@ -121,9 +121,9 @@ class App extends Component {
           blur={this.state.blur}
           showTitle={this.state.isTitleDisplayed}
         />
-        {/* <Projects projects={this.state.projects} /> */}
-        {/* <ExperienceSection /> */}
-        {/* <ContactSection /> */}
+        <Projects projects={this.state.projects} />
+        <ExperienceSection />
+        <ContactSection />
       </div>
     );
   }

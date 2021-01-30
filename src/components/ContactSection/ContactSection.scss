@@ -1,0 +1,65 @@
+/* Breakpoint Sizes */
+$screenWidthB1: 681px;
+$screenWidthB2: 801px;
+$screenWidthB3: 1001px;
+$screenWidthB4: 1201px;
+$screenWidthB5: 1401px;
+$screenWidthB6: 1921px;
+
+$contentMaxWidthMobile: 80%;
+$contentMaxWidthB1: 80%;
+$contentMaxWidthB2: 70%;
+$contentMaxWidthB3: 70%;
+$contentMaxWidthB4: 60%;
+$contentMaxWidthB5: 60%;
+$contentMaxWidthB6: 50%;
+
+$fontSizeSectionHeaderMobile: 20px;
+$fontSizeSectionHeaderB1: 28px;
+$fontSizeSectionHeaderB2: 32px;
+$fontSizeSectionHeaderB3: 36px;
+$fontSizeSectionHeaderB4: 40px;
+$fontSizeSectionHeaderB5: 44px;
+$fontSizeSectionHeaderB6: 48px;
+
+.ContactSection {
+  /* Display & Box Model */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  /* Other */
+  background-color: var(--color-primary);
+
+  .ContactContent {
+    /* Display & Box Model */
+    width: $contentMaxWidthMobile;
+
+    h3 {
+      /* Other */
+      font-family: var(--font-family-primary);
+      font-weight: 400;
+      font-size: $fontSizeSectionHeaderMobile;
+      color: white;
+    }
+
+    .ContactLinks {
+      margin: 40px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .ContactLink {
+        img {
+          /* Display & Box Model */
+          width: 36px;
+          height: 36px;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

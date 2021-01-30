@@ -1,0 +1,553 @@
+/* Mobile Variables */
+$fontSizeTitleMobile: 20px;
+$fontSizeSubtitleMobile: 16px;
+$widthBubbleMobile: 80px;
+$floatDistanceMobile: -5px;
+
+/* Medium Variables */
+$fontSizeTitleMedium: 24px;
+$fontSizeSubtitleMedium: 18px;
+$widthBubbleMedium: 96px;
+$floatDistanceMedium: -10px;
+
+/* Breakpoint 1 Variables */
+$fontSizeTitleB1: 26px;
+$fontSizeSubtitleB1: 20px;
+$widthBubbleB1: 106px;
+$floatDistanceB1: -12px;
+
+/* Breakpoint 2 Variables */
+$fontSizeTitleB2: 28px;
+$fontSizeSubtitleB2: 22px;
+$widthBubbleB2: 120px;
+$floatDistanceB2: -16px;
+
+/* Larg Variables */
+$fontSizeTitleLarge: 32px;
+$fontSizeSubtitleLarge: 24px;
+$widthBubbleLarge: 160px;
+$floatDistanceLarge: -20px;
+
+$colorPrimary: #6380cd;
+$fontFamilySecondary: "Fira Sans";
+$fontFamilyPrimary: "Darker Grotesque";
+
+.ExperienceSection {
+  /* Display & Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+
+  /* Other */
+  background-color: $colorPrimary;
+  .Container {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+    .Column {
+      /* Display & Box Model */
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      p {
+        /* Display & Box Model */
+        padding: 0;
+        margin: 0;
+      }
+
+      .Title {
+        /* Display & Box Model */
+        margin-bottom: 8px !important;
+
+        /* Other */
+        color: white;
+        font-size: $fontSizeTitleMobile;
+        font-family: $fontFamilySecondary;
+        line-height: 150%;
+      }
+
+      .Subtitle {
+        /* Other */
+        color: white;
+        font-size: $fontSizeSubtitleMobile;
+        font-family: $fontFamilyPrimary;
+      }
+
+      .MainImageContainer {
+        /* Display & Box Model */
+        width: $widthBubbleMobile;
+        height: $widthBubbleMobile;
+        margin-bottom: $widthBubbleMobile;
+        margin-top: $widthBubbleMobile * 1.5;
+        border-radius: 50%;
+        box-sizing: content-box;
+
+        /* Other */
+        animation: float 6s ease-in-out infinite;
+
+        img {
+          /* Display & Box Model */
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            /* Other */
+            cursor: pointer;
+          }
+        }
+      }
+
+      .SmallImageContainer {
+        /* Positioning */
+        position: absolute;
+
+        /* Display & Box Model */
+        margin-top: $widthBubbleMobile * 1.5;
+
+        img {
+          /* Display & Box Model */
+          width: $widthBubbleMobile * 0.5;
+          height: $widthBubbleMobile * 0.5;
+          border-radius: 50%;
+
+          /* Other */
+          animation: float 6s ease-in-out infinite;
+          transform: translatey(0px);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+
+          &:hover {
+            /* Other */
+            cursor: pointer;
+          }
+        }
+
+        .SmallImage1 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * -0.75;
+          left: $widthBubbleMobile * -0.25;
+
+          /* Other */
+          animation-delay: 0.5s;
+        }
+
+        .SmallImage2 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * -0.75;
+          left: $widthBubbleMobile * 0.75;
+
+          /* Other */
+          animation-delay: 1s;
+        }
+
+        .SmallImage3 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * 0.25;
+          left: $widthBubbleMobile * -1;
+
+          /* Other */
+          animation-delay: 1.5s;
+        }
+
+        .SmallImage4 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * 0.25;
+          left: $widthBubbleMobile * 1.5;
+
+          /* Other */
+          animation-delay: 2s;
+        }
+
+        .SmallImage5 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * 1.25;
+          left: $widthBubbleMobile * -0.25;
+
+          /* Other */
+          animation-delay: 2.5s;
+        }
+
+        .SmallImage6 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * 1.25;
+          left: $widthBubbleMobile * 0.75;
+
+          /* Other */
+          animation-delay: 3s;
+        }
+      }
+    }
+  }
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey($floatDistanceMobile);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+}
+
+@media (min-width: 681px) {
+  .ExperienceSection {
+    /* Display & Box Model */
+    // height: 60vh;
+    height: auto;
+    padding: 200px;
+
+    .Container {
+      /* Display & Box Model */
+      width: 80%;
+
+      .Column {
+        .Title {
+          /* Other */
+          font-size: $fontSizeTitleMedium;
+        }
+
+        .Subtitle {
+          /* Other */
+          font-size: $fontSizeSubtitleMedium;
+        }
+
+        .MainImageContainer {
+          /* Display & Box Model */
+          width: $widthBubbleMedium;
+          height: $widthBubbleMedium;
+          margin-top: $widthBubbleMedium * 1.5;
+          margin-bottom: $widthBubbleMedium;
+        }
+
+        .SmallImageContainer {
+          /* Display & Box Model */
+          margin-top: $widthBubbleMedium * 1.5;
+
+          img {
+            /* Display & Box Model */
+            width: $widthBubbleMedium * 0.5;
+            height: $widthBubbleMedium * 0.5;
+          }
+
+          .SmallImage1 {
+            /* Positioning */
+            top: $widthBubbleMedium * -0.75;
+            left: $widthBubbleMedium * -0.25;
+          }
+
+          .SmallImage2 {
+            /* Positioning */
+            top: $widthBubbleMedium * -0.75;
+            left: $widthBubbleMedium * 0.75;
+          }
+
+          .SmallImage3 {
+            /* Positioning */
+            top: $widthBubbleMedium * 0.25;
+            left: $widthBubbleMedium * -1;
+          }
+
+          .SmallImage4 {
+            /* Positioning */
+            top: $widthBubbleMedium * 0.25;
+            left: $widthBubbleMedium * 1.5;
+          }
+
+          .SmallImage5 {
+            /* Positioning */
+            top: $widthBubbleMedium * 1.25;
+            left: $widthBubbleMedium * -0.25;
+          }
+
+          .SmallImage6 {
+            /* Positioning */
+            top: $widthBubbleMedium * 1.25;
+            left: $widthBubbleMedium * 0.75;
+          }
+        }
+      }
+    }
+
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey($floatDistanceMedium);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+    }
+  }
+}
+
+@media (min-width: 801px) {
+  .ExperienceSection {
+    .Container {
+      /* Display & Box Model */
+      flex-direction: row;
+
+      .Column {
+        /* Display & Box Model */
+        max-width: 40%;
+
+        .Title {
+          /* Other */
+          font-size: $fontSizeTitleB1;
+        }
+
+        .Subtitle {
+          /* Other */
+          font-size: $fontSizeSubtitleB1;
+        }
+
+        .MainImageContainer {
+          /* Display & Box Model */
+          width: $widthBubbleB1;
+          height: $widthBubbleB1;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: $widthBubbleB1;
+        }
+
+        .SmallImageContainer {
+          /* Display & Box Model */
+          margin-top: 0;
+          img {
+            /* Display & Box Model */
+            width: $widthBubbleB1 * 0.5;
+            height: $widthBubbleB1 * 0.5;
+          }
+
+          .SmallImage1 {
+            /* Positioning */
+            top: $widthBubbleB1 * -0.75;
+            left: $widthBubbleB1 * -0.25;
+          }
+
+          .SmallImage2 {
+            /* Positioning */
+            top: $widthBubbleB1 * -0.75;
+            left: $widthBubbleB1 * 0.75;
+          }
+
+          .SmallImage3 {
+            /* Positioning */
+            top: $widthBubbleB1 * 0.25;
+            left: $widthBubbleB1 * -1;
+          }
+
+          .SmallImage4 {
+            /* Positioning */
+            top: $widthBubbleB1 * 0.25;
+            left: $widthBubbleB1 * 1.5;
+          }
+
+          .SmallImage5 {
+            /* Positioning */
+            top: $widthBubbleB1 * 1.25;
+            left: $widthBubbleB1 * -0.25;
+          }
+
+          .SmallImage6 {
+            /* Positioning */
+            top: $widthBubbleB1 * 1.25;
+            left: $widthBubbleB1 * 0.75;
+          }
+        }
+      }
+    }
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey($floatDistanceB1);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .ExperienceSection {
+    .Container {
+      /* Display & Box Model */
+      width: 60%;
+
+      .Column {
+        .Title {
+          /* Other */
+          font-size: $fontSizeTitleB2;
+        }
+
+        .Subtitle {
+          /* Other */
+          font-size: $fontSizeSubtitleB2;
+        }
+
+        .MainImageContainer {
+          /* Display & Box Model */
+          width: $widthBubbleB2;
+          height: $widthBubbleB2;
+          margin-top: 0;
+          margin-right: $widthBubbleB2;
+        }
+
+        .SmallImageContainer {
+          /* Display & Box Model */
+          margin-top: 0;
+          img {
+            /* Display & Box Model */
+            width: $widthBubbleB2 * 0.5;
+            height: $widthBubbleB2 * 0.5;
+          }
+
+          .SmallImage1 {
+            /* Positioning */
+            top: $widthBubbleB2 * -0.75;
+            left: $widthBubbleB2 * -0.25;
+          }
+
+          .SmallImage2 {
+            /* Positioning */
+            top: $widthBubbleB2 * -0.75;
+            left: $widthBubbleB2 * 0.75;
+          }
+
+          .SmallImage3 {
+            /* Positioning */
+            top: $widthBubbleB2 * 0.25;
+            left: $widthBubbleB2 * -1;
+          }
+
+          .SmallImage4 {
+            /* Positioning */
+            top: $widthBubbleB2 * 0.25;
+            left: $widthBubbleB2 * 1.5;
+          }
+
+          .SmallImage5 {
+            /* Positioning */
+            top: $widthBubbleB2 * 1.25;
+            left: $widthBubbleB2 * -0.25;
+          }
+
+          .SmallImage6 {
+            /* Positioning */
+            top: $widthBubbleB2 * 1.25;
+            left: $widthBubbleB2 * 0.75;
+          }
+        }
+      }
+    }
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey($floatDistanceB2);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1601px) {
+  .ExperienceSection {
+    .Container {
+      .Column {
+        .Title {
+          /* Other */
+          font-size: $fontSizeTitleLarge;
+        }
+
+        .Subtitle {
+          /* Other */
+          font-size: $fontSizeSubtitleLarge;
+        }
+        .MainImageContainer {
+          /* Display & Box Model */
+          width: $widthBubbleLarge;
+          height: $widthBubbleLarge;
+          margin-right: $widthBubbleLarge;
+        }
+
+        .SmallImageContainer {
+          img {
+            /* Display & Box Model */
+            width: $widthBubbleLarge * 0.5;
+            height: $widthBubbleLarge * 0.5;
+          }
+
+          .SmallImage1 {
+            /* Positioning */
+            top: $widthBubbleLarge * -0.75;
+            left: $widthBubbleLarge * -0.25;
+          }
+
+          .SmallImage2 {
+            /* Positioning */
+            top: $widthBubbleLarge * -0.75;
+            left: $widthBubbleLarge * 0.75;
+          }
+
+          .SmallImage3 {
+            /* Positioning */
+            top: $widthBubbleLarge * 0.25;
+            left: $widthBubbleLarge * -1;
+          }
+
+          .SmallImage4 {
+            /* Positioning */
+            top: $widthBubbleLarge * 0.25;
+            left: $widthBubbleLarge * 1.5;
+          }
+
+          .SmallImage5 {
+            /* Positioning */
+            top: $widthBubbleLarge * 1.25;
+            left: $widthBubbleLarge * -0.25;
+          }
+
+          .SmallImage6 {
+            /* Positioning */
+            top: $widthBubbleLarge * 1.25;
+            left: $widthBubbleLarge * 0.75;
+          }
+        }
+      }
+    }
+  }
+}

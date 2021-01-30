@@ -1,0 +1,187 @@
+/* Breakpoint Sizes */
+$screenWidthB1: 681px;
+$screenWidthB2: 801px;
+$screenWidthB3: 1001px;
+$screenWidthB4: 1201px;
+$screenWidthB5: 1401px;
+$screenWidthB6: 1921px;
+
+$contentMaxWidthMobile: 80%;
+$contentMaxWidthB1: 80%;
+$contentMaxWidthB2: 70%;
+$contentMaxWidthB3: 70%;
+$contentMaxWidthB4: 60%;
+$contentMaxWidthB5: 60%;
+$contentMaxWidthB6: 50%;
+
+$navLinkFontSizeMobile: 10px;
+$navLinkFontSizeB1: 10px;
+$navLinkFontSizeB2: 14px;
+$navLinkFontSizeB3: 16px;
+$navLinkFontSizeB4: 18px;
+$navLinkFontSizeB5: 18px;
+$navLinkFontSizeB6: 20px;
+
+.NavWrapper {
+  /* Positioning */
+  position: fixed;
+  z-index: 2;
+
+  /* Display & Box Model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+
+  /* Other */
+  background-color: white;
+
+  .NavBar {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--content-widthpct-large);
+    width: 100%;
+    height: 100px;
+
+    .NameHeader {
+      p {
+        /* Other */
+        font-size: 24px;
+        font-family: var(--font-family-primary);
+      }
+    }
+
+    .NavLinks {
+      /* Display & Box Model */
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      .NavLinkWrapper {
+        /* Other */
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          /* Other */
+          transform: scale(1.1);
+        }
+
+        .NavLink {
+          /* Display & Box Model */
+          margin-left: 20px;
+
+          /* Other */
+          text-decoration: none;
+          color: inherit;
+          font-family: var(--font-family-primary);
+          text-transform: uppercase;
+        }
+        #ResumeLink {
+          /* Other */
+          color: var(--color-primary) !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB1) {
+  .NavWrapper {
+    .NavBar {
+      /* Display & Box Model */
+      width: $contentMaxWidthB1;
+    }
+
+    .NavLinks {
+      .NavLink {
+        /* Other */
+        font-size: $navLinkFontSizeB1;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB2) {
+  .NavWrapper {
+    .NavBar {
+      /* Display & Box Model */
+      width: $contentMaxWidthB2;
+    }
+
+    .NavLinks {
+      .NavLink {
+        /* Other */
+        font-size: $navLinkFontSizeB2;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB3) {
+  .NavWrapper {
+    .NavBar {
+      /* Display & Box Model */
+      width: $contentMaxWidthB3;
+    }
+
+    .NavLinks {
+      .NavLink {
+        /* Other */
+        font-size: $navLinkFontSizeB3;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB4) {
+  .NavWrapper {
+    .NavBar {
+      /* Display & Box Model */
+      width: $contentMaxWidthB4;
+    }
+
+    .NavLinks {
+      .NavLink {
+        /* Other */
+        font-size: $navLinkFontSizeB4;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB5) {
+  .NavWrapper {
+    .NavBar {
+      /* Display & Box Model */
+      width: $contentMaxWidthB5;
+    }
+
+    .NavLinks {
+      .NavLink {
+        /* Other */
+        font-size: $navLinkFontSizeB5;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB6) {
+  .NavWrapper {
+    .NavBar {
+      /* Display & Box Model */
+      width: $contentMaxWidthB6;
+    }
+
+    .NavLinks {
+      .NavLink {
+        /* Other */
+        font-size: $navLinkFontSizeB6;
+      }
+    }
+  }
+}

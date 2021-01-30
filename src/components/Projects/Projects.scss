@@ -1,0 +1,174 @@
+/* Breakpoint Sizes */
+$screenWidthB1: 681px;
+$screenWidthB2: 801px;
+$screenWidthB3: 1001px;
+$screenWidthB4: 1201px;
+$screenWidthB5: 1401px;
+$screenWidthB6: 1921px;
+
+$contentMaxWidthMobile: 80%;
+$contentMaxWidthB1: 80%;
+$contentMaxWidthB2: 70%;
+$contentMaxWidthB3: 70%;
+$contentMaxWidthB4: 60%;
+$contentMaxWidthB5: 60%;
+$contentMaxWidthB6: 50%;
+
+$linkIconSizeMobile: 80%;
+$linkIconSizeB1: 70%;
+$linkIconSizeB2: 70%;
+$linkIconSizeB3: 70%;
+$linkIconSizeB4: 60%;
+$linkIconSizeB5: 60%;
+$linkIconSizeB6: 50%;
+
+$fontSizeSectionHeaderMobile: 24px;
+$fontSizeSectionHeaderB1: 28px;
+$fontSizeSectionHeaderB2: 32px;
+$fontSizeSectionHeaderB3: 36px;
+$fontSizeSectionHeaderB4: 40px;
+$fontSizeSectionHeaderB5: 44px;
+$fontSizeSectionHeaderB6: 48px;
+
+.Projects {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 100px auto;
+
+  .ProjectsContainer {
+    /* Display & Box Model */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    // padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  .ArchiveLink {
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+
+    transition: all 0.1s ease-in-out;
+
+    h3 {
+      /* Display & Box Model */
+      padding: 0;
+      margin: 0;
+      margin-right: 12px;
+
+      font-family: "Fira Sans";
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    &:hover {
+      /* Other */
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    img {
+      /* Display & Box Model */
+      height: 28px;
+      width: 28px;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    margin: 12px 0;
+    font-size: $fontSizeSectionHeaderMobile;
+    font-family: var(--font-family-secondary);
+    font-weight: bold;
+  }
+
+  .Projects a {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $screenWidthB1) {
+  .Projects {
+    /* Display & Box Model */
+    width: $contentMaxWidthB1;
+    .ArchiveLink {    
+    /* Display & Box Model */
+    margin: 100px;
+
+    }
+
+    h2 {
+      /* Other */
+      font-size: $fontSizeSectionHeaderB1;
+    }
+  }
+}
+
+@media (min-width: $screenWidthB2) {
+  .Projects {
+    /* Display & Box Model */
+    width: $contentMaxWidthB2;
+
+    h2 {
+      /* Other */
+      font-size: $fontSizeSectionHeaderB2;
+    }
+  }
+}
+
+@media (min-width: $screenWidthB3) {
+  .Projects {
+    /* Display & Box Model */
+    width: $contentMaxWidthB3;
+
+    h2 {
+      /* Other */
+      font-size: $fontSizeSectionHeaderB3;
+    }
+  }
+}
+
+@media (min-width: $screenWidthB4) {
+  .Projects {
+    /* Display & Box Model */
+    width: $contentMaxWidthB4;
+
+    h2 {
+      /* Other */
+      font-size: $fontSizeSectionHeaderB4;
+    }
+  }
+}
+
+@media (min-width: $screenWidthB5) {
+  .Projects {
+    /* Display & Box Model */
+    width: $contentMaxWidthB5;
+
+    h2 {
+      /* Other */
+      font-size: $fontSizeSectionHeaderB5;
+    }
+  }
+}
+
+@media (min-width: $screenWidthB6) {
+  .Projects {
+    /* Display & Box Model */
+    width: $contentMaxWidthB6;
+
+    h2 {
+      /* Other */
+      font-size: $fontSizeSectionHeaderB6;
+    }
+  }
+}
