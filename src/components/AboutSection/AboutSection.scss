@@ -71,7 +71,7 @@ $primaryColor: #6380cd;
   justify-content: space-evenly;
   align-items: center;
   width: $contentMaxWidthMobile;
-  height: 70vh;
+  height: 40vh;
   padding-top: 90px;
 
   // @include AboutLayout;
@@ -161,7 +161,8 @@ $primaryColor: #6380cd;
     /* Display & Box Model */
     justify-content: flex-start;
     width: $contentMaxWidthB1;
-    height: 70vh;
+    height: 40vh;
+    // height: 70vh;
     padding-top: 100px;
 
     .header-section {
