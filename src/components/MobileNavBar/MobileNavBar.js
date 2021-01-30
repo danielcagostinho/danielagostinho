@@ -63,10 +63,10 @@ const MobileNavBar = () => {
           </AnchorLink>
           <AnchorLink
             offset={() => 100}
-            href="#experience"
+            href="#skills"
             className="mobile-nav-link"
           >
-            Experience
+            Skills
           </AnchorLink>
           <AnchorLink
             offset={() => 100}

@@ -4,7 +4,7 @@ import { isMobile } from "react-device-detect";
 import NavBar from "./components/NavBar/NavBar";
 import MobileNavBar from "./components/MobileNavBar/MobileNavBar";
 import AboutSection from "./components/AboutSection/AboutSection";
-import ExperienceSection from "./components/ExperienceSection/ExperienceSection";
+import SkillsSection from "./components/SkillsSection/SkillsSection";
 import Projects from "./components/Projects/Projects";
 import ContactSection from "./components/ContactSection/ContactSection";
 
@@ -122,7 +122,7 @@ class App extends Component {
           showTitle={this.state.isTitleDisplayed}
         />
         <Projects projects={this.state.projects} />
-        <ExperienceSection />
+        <SkillsSection />
         <ContactSection />
       </div>
     );

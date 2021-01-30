@@ -9,9 +9,9 @@ import nodeIcon from "../../assets/icons/NodeIcon.svg";
 import sassIcon from "../../assets/icons/SassIcon.svg";
 import figmaIcon from "../../assets/icons/FigmaIcon.svg";
 
-import "./ExperienceSection.scss";
+import "./SkillsSection.scss";
 
-const ExperienceSection = () => {
+const SkillsSection = () => {
   const bubbleVariants = {
     visible: {
       opacity: 1,
@@ -22,10 +22,10 @@ const ExperienceSection = () => {
   };
 
   return (
-    <div className="ExperienceSection" id="experience">
+    <div className="SkillsSection" id="skills">
       <div className="Container">
         <div className="Column">
-          <p className="Title">Here is some of the tech I've worked with:</p>
+          <p className="Title">My Skills</p>
           {/* <p className="Subtitle">
             Click on a bubble to view my projects/work where I used that
             language.
@@ -55,4 +55,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection;
+export default SkillsSection;

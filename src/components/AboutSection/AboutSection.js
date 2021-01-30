@@ -38,7 +38,7 @@ const AboutSection = ({ avatar }) => {
         </motion.div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="bio"
         variants={titleVariants}
         initial="hidden"
@@ -46,11 +46,9 @@ const AboutSection = ({ avatar }) => {
         exit="hidden"
       >
         <p>
-          Hi, my name’s Daniel and I love building beautiful websites. I’m a web
-          developer focusing on <b>front-end dev</b> with some{" "}
-          <span>dabbling</span> in design.
+          Hi, my name’s Daniel and I am passionate about building beautiful, interactive websites. x
         </p>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };

@@ -71,10 +71,10 @@ const NavBar = ({ showName }) => {
             <div className="NavLinkWrapper">
               <AnchorLink
                 offset={() => 100}
-                href="#experience"
+                href="#skills"
                 className="NavLink"
               >
-                Experience
+                Skills
               </AnchorLink>
             </div>
           </motion.div>

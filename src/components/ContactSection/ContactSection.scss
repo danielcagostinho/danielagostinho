@@ -15,8 +15,8 @@ $contentMaxWidthB5: 60%;
 $contentMaxWidthB6: 50%;
 
 $fontSizeSectionHeaderMobile: 20px;
-$fontSizeSectionHeaderB1: 28px;
-$fontSizeSectionHeaderB2: 32px;
+$fontSizeSectionHeaderB1: 26px;
+$fontSizeSectionHeaderB2: 26px;
 $fontSizeSectionHeaderB3: 36px;
 $fontSizeSectionHeaderB4: 40px;
 $fontSizeSectionHeaderB5: 44px;
@@ -27,20 +27,27 @@ $fontSizeSectionHeaderB6: 48px;
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 100px 0;
 
   /* Other */
   background-color: var(--color-primary);
 
   .ContactContent {
     /* Display & Box Model */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: $contentMaxWidthMobile;
+    max-width: 400px;
 
     h3 {
       /* Other */
       font-family: var(--font-family-primary);
-      font-weight: 400;
       font-size: $fontSizeSectionHeaderMobile;
       color: white;
+      line-height: 150%;
+      text-align: center;
+      font-weight: 400;
     }
 
     .ContactLinks {
@@ -59,6 +66,91 @@ $fontSizeSectionHeaderB6: 48px;
             transform: scale(1.1);
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB1) {
+  .ContactSection {
+    .ContactContent {
+      /* Display & Box Model */
+      width: $contentMaxWidthB1;
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeSectionHeaderB1;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB2) {
+  .ContactSection {
+    .ContactContent {
+      /* Display & Box Model */
+      width: $contentMaxWidthB2;
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeSectionHeaderB2;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB3) {
+  .ContactSection {
+    .ContactContent {
+      /* Display & Box Model */
+      width: $contentMaxWidthB3;
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeSectionHeaderB3;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB4) {
+  .ContactSection {
+    .ContactContent {
+      /* Display & Box Model */
+      width: $contentMaxWidthB4;
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeSectionHeaderB4;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB5) {
+  .ContactSection {
+    .ContactContent {
+      /* Display & Box Model */
+      width: $contentMaxWidthB5;
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeSectionHeaderB5;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenWidthB6) {
+  .ContactSection {
+    .ContactContent {
+      /* Display & Box Model */
+      width: $contentMaxWidthB6;
+
+      h3 {
+        /* Other */
+        font-size: $fontSizeSectionHeaderB6;
       }
     }
   }

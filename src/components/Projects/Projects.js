@@ -1,7 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import Project from "./Project/Project";
-import { motion } from "framer-motion";
 
 import archiveIcon from "../../assets/icons/ArchiveIcon.svg";
 
@@ -17,18 +17,20 @@ const Projects = ({ projects, onEnter }) => {
   });
 
   return (
-    <div className="Projects" id="projects">
-      <motion.h2
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        transition={{delay: 2}}
-      >Featured Work</motion.h2>
-      <div className="ProjectsContainer">{projectsDisplay}</div>
+    <motion.div
+      className="Projects"
+      id="projects"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 2 }}
+    >
+      <motion.h2>Featured Work</motion.h2>
+      <motion.div className="ProjectsContainer">{projectsDisplay}</motion.div>
       {/* <div className="ArchiveLink">
         <h3>View Archive</h3>
         <img src={archiveIcon} alt="Archive Icon" />
       </div> */}
-    </div>
+    </motion.div>
   );
 };
 
