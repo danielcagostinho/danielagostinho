@@ -5,6 +5,8 @@ import { motion, useAnimation } from "framer-motion";
 import githubIcon from "../../../assets/icons/GithubIcon.svg";
 import externalIcon from "../../../assets/icons/ExternalIcon.svg";
 
+import LanguagePill from '../../LanguagePill/LanguagePill';
+
 import "./Project.scss";
 
 const Project = ({ project, flipped }) => {
@@ -82,26 +84,24 @@ const Project = ({ project, flipped }) => {
         </a>
       </div>
       <div className="ProjectDescription">
-        <h3>{project.name}</h3>
+        <h4>{project.name}</h4>
         <p>{project.description}</p>
-        <p>
+        <div className="pills">
           {project.tech.map((t, idx) => {
-            return <span key={idx}>{t}</span>;
+            return <LanguagePill key={idx} color={t.color}>{t.name}</LanguagePill>;
           })}
-        </p>
+        </div>
         <div className="ProjectLinks">
           <a href={project.github} target="_blank" rel="noreferrer">
             <img
               src={githubIcon}
               alt="Go to page"
-              // style={styleVariants[variant].link}
             />
           </a>
           <a href={project.url} target="_blank" rel="noreferrer">
             <img
               src={externalIcon}
               alt="Github icon"
-              // style={styleVariants[variant].link}
             />
           </a>
         </div>

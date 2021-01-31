@@ -1,30 +1,4 @@
-/* Breakpoint Sizes */
-$screenWidthB1: 681px;
-$screenWidthB2: 801px;
-$screenWidthB3: 1001px;
-$screenWidthB4: 1201px;
-$screenWidthB5: 1401px;
-$screenWidthB6: 1921px;
-
-$fontSizeProjectP1Mobile: 16px;
-$fontSizeProjectP1B1: 16px;
-$fontSizeProjectP1B3: 20px;
-$fontSizeProjectP1B5: 24px;
-$fontSizeProjectP1B6: 30px;
-
-$fontSizeProjectH3Mobile: 20px;
-$fontSizeProjectH3B1: 20px;
-$fontSizeProjectH3B3: 24px;
-$fontSizeProjectH3B5: 28px;
-$fontSizeProjectH3B6: 36px;
-
-@mixin reset-text {
-  margin: 0;
-  padding: 0;
-}
-
-.ProjectWrapper {
-}
+@import "../../../design-tokens/scss-variables";
 
 .Project {
   /* Display & Box Model */
@@ -36,7 +10,7 @@ $fontSizeProjectH3B6: 36px;
   row-gap: 20px;
   justify-items: center;
   transition: all 0.3s ease-out;
-  padding: 16px;
+  padding: 20px;
 
   .ProjectImage {
     height: 100%;
@@ -55,30 +29,25 @@ $fontSizeProjectH3B6: 36px;
   .ProjectDescription {
     width: 70%;
     height: 100%;
-    font-family: var(--font-family-secondary);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
-    h3 {
-      @include reset-text;
-      margin-bottom: 4px;
-      line-height: 24px;
-      font-size: $fontSizeProjectH3Mobile;
+    h4 {
+      /* Display & Box Model */
+      margin-bottom: 8px;
     }
 
     p {
-      @include reset-text;
-      margin: 4px 0;
-      font-size: $fontSizeProjectP1Mobile;
+      margin-bottom: 8px;
     }
 
-    span {
-      @include reset-text;
-      // color: var(--color-primary);
-      margin: 4px;
+    .pills {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 8px;
     }
   }
 
@@ -97,10 +66,10 @@ $fontSizeProjectH3B6: 36px;
       height: 24px;
       margin: 8px 0;
 
-      &:nth-child(even) {
-        margin-right: -4px;
-        margin-left: 16px;
-      }
+      // &:nth-child(even) {
+      //   margin-right: -4px;
+      //   margin-left: 16px;
+      // }
 
       /* Other */
       transition: transform 0.2s ease-in-out;
@@ -114,30 +83,29 @@ $fontSizeProjectH3B6: 36px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-    margin-bottom: 60px;
-    padding: 16px;
+    margin-bottom: 96px;
 
-    &:nth-child(even) {
-      .ProjectDescription {
-        /* Display & Box Model */
-        order: -1;
-        align-items: flex-start;
+    // &:nth-child(even) {
+    //   .ProjectDescription {
+    //     /* Display & Box Model */
+    //     // order: -1;
+    //     align-items: flex-start;
 
-        /* Other */
-        text-align: left;
+    //     /* Other */
+    //     text-align: left;
 
-        span {
-          /* Display & Box Model */
-          margin-left: 0;
-          margin-right: 8px;
-        }
-      }
+    //     .pills {
+    //       /* Display & Box Model */
+    //       margin-left: -8px;
+    //       margin-right: 8px;
+    //     }
+    //   }
 
-      .ProjectLinks {
-        /* Display & Box Model */
-        justify-content: flex-start;
-      }
-    }
+    //   .ProjectLinks {
+    //     /* Display & Box Model */
+    //     justify-content: flex-start;
+    //   }
+    // }
 
     .ProjectDescription {
       /* Display & Box Model */
@@ -148,24 +116,16 @@ $fontSizeProjectH3B6: 36px;
       /* Other */
       text-align: right;
 
-      h3 {
-        /* Other */
-        font-size: $fontSizeProjectH3B1;
-        font-weight: 700;
+      h4 {
       }
 
       p {
-        /* Other */
-        font-size: $fontSizeProjectP1B1;
       }
 
-      span {
+      .pills {
         /* Display & Box Model */
-        margin-left: 4px;
-        margin-right: 0;
-
-        /* Other */
-        font-weight: 700;
+        margin-left: 8px;
+        margin-right: -8px;
       }
     }
 
@@ -185,6 +145,9 @@ $fontSizeProjectH3B6: 36px;
         }
       }
     }
+   
+    transition: all 0.3s ease-in-out;
+
     &:hover {
       transform: scale(1.005) !important;
       box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
@@ -195,30 +158,22 @@ $fontSizeProjectH3B6: 36px;
 
 @media (min-width: $screenWidthB3) {
   .Project {
-    &:nth-child(even) {
-      .ProjectDescription {
-        span {
-          /* Display & Box Model */
-          margin-right: 16px;
-        }
-      }
-    }
+    // &:nth-child(even) {
+    //   .ProjectDescription {
+    //     .pills {
+    //       /* Display & Box Model */
+    //       margin-right: 16px;
+    //     }
+    //   }
+    // }
 
     .ProjectDescription {
-      h3 {
-        /* Display & Box Model */
-        margin-bottom: 8px;
-
-        /* Other */
-        font-size: $fontSizeProjectH3B3;
+      h4 {
       }
 
       p {
         /* Display & Box Model */
         width: 60%;
-
-        /* Other */
-        font-size: $fontSizeProjectP1B3;
 
         &:nth-last-child(n) {
           /* Display & Box Model */
@@ -226,9 +181,9 @@ $fontSizeProjectH3B6: 36px;
         }
       }
 
-      span {
+      .pills {
         /* Display & Box Model */
-        width: 80%;
+        // width: 80%;
         margin-left: 16px;
       }
     }
@@ -245,30 +200,23 @@ $fontSizeProjectH3B6: 36px;
 
 @media (min-width: $screenWidthB5) {
   .Project {
-    &:nth-child(even) {
-      .ProjectDescription {
-        span {
-          /* Display & Box Model */
-          margin-right: 16px;
-        }
-      }
-    }
+    // &:nth-child(even) {
+    //   .ProjectDescription {
+    //     .pills {
+    //       /* Display & Box Model */
+    //       margin-right: 16px;
+    //     }
+    //   }
+    // }
 
     .ProjectDescription {
-      h3 {
+      h4 {
         /* Display & Box Model */
-        margin-bottom: 8px;
-
-        /* Other */
-        font-size: $fontSizeProjectH3B5;
       }
 
       p {
         /* Display & Box Model */
         width: 60%;
-
-        /* Other */
-        font-size: $fontSizeProjectP1B5;
 
         &:nth-last-child(n) {
           /* Display & Box Model */
@@ -276,9 +224,8 @@ $fontSizeProjectH3B6: 36px;
         }
       }
 
-      span {
+      .pills {
         /* Display & Box Model */
-        width: 80%;
         margin-left: 16px;
       }
     }
@@ -295,30 +242,23 @@ $fontSizeProjectH3B6: 36px;
 
 @media (min-width: $screenWidthB6) {
   .Project {
-    &:nth-child(even) {
-      .ProjectDescription {
-        span {
-          /* Display & Box Model */
-          margin-right: 16px;
-        }
-      }
-    }
+    // &:nth-child(even) {
+    //   .ProjectDescription {
+    //     .pills {
+    //       /* Display & Box Model */
+    //       margin-right: 16px;
+    //     }
+    //   }
+    // }
 
     .ProjectDescription {
-      h3 {
+      h4 {
         /* Display & Box Model */
-        margin-bottom: 16px;
-
-        /* Other */
-        font-size: $fontSizeProjectH3B6;
+        margin-bottom: 32px;
       }
 
       p {
-        /* Display & Box Model */
-        width: 60%;
-
-        /* Other */
-        font-size: $fontSizeProjectP1B6;
+        margin-bottom: 32px;
 
         &:nth-last-child(n) {
           /* Display & Box Model */
@@ -326,9 +266,10 @@ $fontSizeProjectH3B6: 36px;
         }
       }
 
-      span {
+      .pills {
         /* Display & Box Model */
-        width: 80%;
+        // width: 80%;
+        margin-bottom: 32px;
         margin-left: 16px;
       }
     }
@@ -336,8 +277,8 @@ $fontSizeProjectH3B6: 36px;
     .ProjectLinks {
       img {
         /* Display & Box Model */
-        width: 28px;
-        height: 28px;
+        width: 40px;
+        height: 40px;
       }
     }
   }

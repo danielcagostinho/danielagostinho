@@ -32,7 +32,11 @@ class App extends Component {
         description:
           "A fresh new take on a traditional Portuguese bakery website.",
         imgSrc: trigo,
-        tech: ["React.js", "SASS", "Node.js"],
+        tech: [
+          { name: "React.js", color: "#6380CD" },
+          { name: "SASS", color: "#CD679A" },
+          { name: "Node.js", color: "#8CC84B" },
+        ],
         github: "https://github.com/danielcagostinho/TrigoBakery",
         url: "https://immense-tundra-33861.herokuapp.com/",
       },
@@ -40,7 +44,11 @@ class App extends Component {
         name: "Dan Kim Films",
         description: "A website to showcase the work of a videographer.",
         imgSrc: dankimfilms,
-        tech: ["React.js", "SASS", "Node.js"],
+        tech: [
+          { name: "React.js", color: "#6380CD" },
+          { name: "SASS", color: "#CD679A" },
+          { name: "Node.js", color: "#8CC84B" },
+        ],
         github: "https://github.com/danielcagostinho/DKFilms",
         url: "",
       },
@@ -49,7 +57,11 @@ class App extends Component {
         description:
           "A minimalistic weather app using custom icons, designed in Figma.",
         imgSrc: weather,
-        tech: ["React.js", "Figma", "Node.js"],
+        tech: [
+          { name: "React.js", color: "#6380CD" },
+          { name: "Figma", color: "#F24E1E" },
+          { name: "Node.js", color: "#8CC84B" },
+        ],
         github: "https://github.com/danielcagostinho/ReactWeather",
         url: "https://pacific-cliffs-73088.herokuapp.com/",
       },
@@ -58,7 +70,11 @@ class App extends Component {
         description:
           "A clean, simple todo list designed in Figma and built in React.js.",
         imgSrc: todo,
-        tech: ["React.js", "Figma", "Node.js"],
+        tech: [
+          { name: "React.js", color: "#6380CD" },
+          { name: "Figma", color: "#F24E1E" },
+          { name: "Node.js", color: "#8CC84B" },
+        ],
         github: "https://github.com/danielcagostinho/ReactTodo",
         url: "https://damp-shore-14787.herokuapp.com/",
       },

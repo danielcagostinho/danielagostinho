@@ -24,7 +24,7 @@ const Projects = ({ projects, onEnter }) => {
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 2 }}
     >
-      <motion.h2>Featured Work</motion.h2>
+      <motion.h3>Featured Work</motion.h3>
       <motion.div className="ProjectsContainer">{projectsDisplay}</motion.div>
       {/* <div className="ArchiveLink">
         <h3>View Archive</h3>

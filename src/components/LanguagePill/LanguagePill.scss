@@ -1,0 +1,25 @@
+.LanguagePill {
+  /* Display & Box Model */
+  display: grid;
+  place-items: center;
+  margin: 8px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  // padding: 0px 12px 4px 12px !important;
+  padding: 8px 12px 6px 12px;
+
+
+  // padding: 4px !important;
+
+  p {
+    /* Other */
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    color: white;
+    // font-size: var(--font-size-p1-b6) !important;
+    // font-family: var(--font-family-primary);
+    // font-weight: 400 !important;
+    // line-height: $fontSizeProjectP1Mobile;
+  }
+}

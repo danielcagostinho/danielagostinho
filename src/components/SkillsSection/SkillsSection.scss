@@ -1,30 +1,20 @@
 /* Mobile Variables */
-$fontSizeTitleMobile: 20px;
-$fontSizeSubtitleMobile: 16px;
 $widthBubbleMobile: 80px;
 $floatDistanceMobile: -5px;
 
 /* Medium Variables */
-$fontSizeTitleMedium: 24px;
-$fontSizeSubtitleMedium: 18px;
 $widthBubbleMedium: 96px;
 $floatDistanceMedium: -10px;
 
 /* Breakpoint 1 Variables */
-$fontSizeTitleB1: 26px;
-$fontSizeSubtitleB1: 20px;
 $widthBubbleB1: 106px;
 $floatDistanceB1: -12px;
 
 /* Breakpoint 2 Variables */
-$fontSizeTitleB2: 28px;
-$fontSizeSubtitleB2: 22px;
 $widthBubbleB2: 120px;
 $floatDistanceB2: -16px;
 
 /* Larg Variables */
-$fontSizeTitleLarge: 32px;
-$fontSizeSubtitleLarge: 24px;
 $widthBubbleLarge: 160px;
 $floatDistanceLarge: -20px;
 
@@ -66,7 +56,6 @@ $floatDistanceLarge: -20px;
 
         /* Other */
         color: white;
-        font-size: $fontSizeTitleMobile;
         font-family: var(--font-family-primary);
         line-height: 150%;
         text-align: center;
@@ -75,7 +64,6 @@ $floatDistanceLarge: -20px;
       .Subtitle {
         /* Other */
         color: white;
-        font-size: $fontSizeSubtitleMobile;
         font-family: var(--font-family-secondary);
       }
 
@@ -231,12 +219,10 @@ $floatDistanceLarge: -20px;
           // margin-top: $widthBubbleMedium * 1.5 !important;
           margin-bottom: $widthBubbleMedium * 1 !important;
           /* Other */
-          font-size: $fontSizeTitleMedium;
         }
 
         .Subtitle {
           /* Other */
-          font-size: $fontSizeSubtitleMedium;
         }
 
         .MainImageContainer {
@@ -325,12 +311,10 @@ $floatDistanceLarge: -20px;
 
         .Title {
           /* Other */
-          font-size: $fontSizeTitleB1;
         }
 
         .Subtitle {
           /* Other */
-          font-size: $fontSizeSubtitleB1;
         }
 
         .MainImageContainer {
@@ -416,12 +400,10 @@ $floatDistanceLarge: -20px;
       .Column {
         .Title {
           /* Other */
-          font-size: $fontSizeTitleB2;
         }
 
         .Subtitle {
           /* Other */
-          font-size: $fontSizeSubtitleB2;
         }
 
         .MainImageContainer {
@@ -501,12 +483,10 @@ $floatDistanceLarge: -20px;
       .Column {
         .Title {
           /* Other */
-          font-size: $fontSizeTitleLarge;
         }
 
         .Subtitle {
           /* Other */
-          font-size: $fontSizeSubtitleLarge;
         }
         .MainImageContainer {
           /* Display & Box Model */

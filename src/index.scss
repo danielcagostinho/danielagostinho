@@ -1,6 +1,8 @@
 @import "./design-tokens/scss-variables.scss";
 @import "./design-tokens/css-variables.scss";
 
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,4 +29,34 @@ code {
   font-style: normal;
   font-weight: 400;
   src: url("./assets/fonts/DarkerGrotesque-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mukta Regular";
+  src: url("./assets/fonts/Mukta-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mukta Extra Light";
+  src: url("./assets/fonts/Mukta-ExtraLight.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src: url("./assets/fonts/LeagueSpartan-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "League Spartan Light";
+  src: url("./assets/fonts/LeagueSpartan-Light.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "League Spartan Bold";
+  src: url("./assets/fonts/LeagueSpartan-Bold.ttf");
+  font-weight: 700;
 }

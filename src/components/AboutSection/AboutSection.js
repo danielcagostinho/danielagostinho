@@ -21,7 +21,7 @@ const AboutSection = ({ avatar }) => {
 
   return (
     <motion.div
-      className="about-section"
+      className="about-section content"
       variants={titleVariants}
       initial="hidden"
       animate="visible"

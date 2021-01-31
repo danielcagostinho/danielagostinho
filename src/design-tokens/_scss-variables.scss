@@ -1,3 +1,42 @@
 $headingfontsize: 90px;
 $primaryFontColor: white;
-$secondaryFontColor: rgba(255,255,255,0.5);
+$secondaryFontColor: rgba(255, 255, 255, 0.5);
+
+$screenWidthB1: 681px;
+$screenWidthB2: 801px;
+$screenWidthB3: 1001px;
+$screenWidthB4: 1201px;
+$screenWidthB5: 1401px;
+$screenWidthB6: 1921px;
+
+$contentMaxWidthMobile: 80%;
+$contentMaxWidthB1: 80%;
+$contentMaxWidthB2: 70%;
+$contentMaxWidthB3: 70%;
+$contentMaxWidthB4: 60%;
+$contentMaxWidthB5: 60%;
+$contentMaxWidthB6: 50%;
+
+@mixin global-fonts(
+  $font-size-h1,
+  $font-size-h2,
+  $font-size-h3,
+  $font-size-h4,
+  $font-size-p1
+) {
+  h1 {
+    font-size: $font-size-h1;
+  }
+  h2 {
+    font-size: $font-size-h2;
+  }
+  h3 {
+    font-size: $font-size-h3;
+  }
+  h4 {
+    font-size: $font-size-h4;
+  }
+  p {
+    font-size: $font-size-p1;
+  }
+}

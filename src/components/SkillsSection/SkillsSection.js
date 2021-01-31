@@ -25,11 +25,7 @@ const SkillsSection = () => {
     <div className="SkillsSection" id="skills">
       <div className="Container">
         <div className="Column">
-          <p className="Title">My Skills</p>
-          {/* <p className="Subtitle">
-            Click on a bubble to view my projects/work where I used that
-            language.
-          </p> */}
+          <h3 className="Title">My Skills</h3>
         </div>
         <motion.div
           className="Column"

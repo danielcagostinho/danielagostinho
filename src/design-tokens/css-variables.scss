@@ -1,12 +1,64 @@
 :root {
-  --color-primary: #6380CD;
+  --color-primary: #6380cd;
   --color-secondary: #000000;
-  --font-family-primary: "Fira Sans";
+  --font-family-primary: "League Spartan";
+  --font-family-primary-light: "League Spartan Light";
   --font-family-secondary: "Darker Grotesque";
-  --font-size-h1: 72px;
-  --font-size-h2: 48px;
-  --font-size-p1: 32px;
-  --font-size-p2: 24px;
-  --content-widthpct-large: 60%;
-}
 
+  /* Breakpoint Sizes */
+  --screen-width-b1: 681px;
+  --screen-width-b2: 801px;
+  --screen-width-b3: 1001px;
+  --screen-width-b4: 1201px;
+  --screen-width-b5: 1401px;
+  --screen-width-b6: 1921px;
+
+  /* Mobile Font Sizes */
+  --font-size-h1-mobile: 28px;
+  --font-size-h2-mobile: 24px;
+  --font-size-h3-mobile: 20px;
+  --font-size-h4-mobile: 18px;
+  --font-size-p1-mobile: 16px;
+
+  /* B1 Font Sizes */
+  --font-size-h1-b1: 32px;
+  --font-size-h2-b1: 28px;
+  --font-size-h3-b1: 24px;
+  --font-size-h4-b1: 20px;
+  --font-size-p1-b1: 18px;
+
+  /* B2 Font Sizes */
+  --font-size-h1-b2: 36px;
+  --font-size-h2-b2: 32px;
+  --font-size-h3-b2: 28px;
+  --font-size-h4-b2: 24px;
+  --font-size-p1-b2: 20px;
+
+  /* B3 Font Sizes */
+  --font-size-h1-b3: 40px;
+  --font-size-h2-b3: 36px;
+  --font-size-h3-b3: 48px;
+  --font-size-h4-b3: 36px;
+  --font-size-p1-b3: 24px;
+
+  /* B4 Font Sizes */
+  --font-size-h1-b4: 52px;
+  --font-size-h2-b4: 40px;
+  --font-size-h3-b4: 36px;
+  --font-size-h4-b4: 28px;
+  --font-size-p1-b4: 24px;
+
+  /* B5 Font Sizes */
+  --font-size-h1-b5: 60px;
+  --font-size-h2-b5: 48px;
+  --font-size-h3-b5: 40px;
+  --font-size-h4-b5: 36px;
+  --font-size-p1-b5: 32px;
+
+  /* B6 Font Sizes */
+  --font-size-h1-b6: 120px;
+  --font-size-h2-b6: 60px;
+  --font-size-h3-b6: 48px;
+  --font-size-h4-b6: 36px;
+  --font-size-p1-b6: 28px;
+}
