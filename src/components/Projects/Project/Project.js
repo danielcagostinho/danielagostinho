@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import githubIcon from "../../../assets/icons/GithubIcon.svg";
 import externalIcon from "../../../assets/icons/ExternalIcon.svg";
 
-import LanguagePill from '../../LanguagePill/LanguagePill';
+import LanguagePill from "../../LanguagePill/LanguagePill";
 
 import "./Project.scss";
 
@@ -49,7 +49,8 @@ const Project = ({ project, flipped }) => {
   const animationVariants = {
     visible: {
       opacity: 1,
-      y: [0, -10, 0],
+      y: [0, -50, 0],
+      transition: { duration: 0.5, delay: 0 },
     },
     hidden: {
       opacity: 0,
@@ -74,7 +75,6 @@ const Project = ({ project, flipped }) => {
       initial="hidden"
       variants={animationVariants}
       animate={controls}
-      transition={{ duration: 1 }}
       className="Project"
       style={styleVariants[variant].project}
     >
@@ -88,21 +88,19 @@ const Project = ({ project, flipped }) => {
         <p>{project.description}</p>
         <div className="pills">
           {project.tech.map((t, idx) => {
-            return <LanguagePill key={idx} color={t.color}>{t.name}</LanguagePill>;
+            return (
+              <LanguagePill key={idx} color={t.color}>
+                {t.name}
+              </LanguagePill>
+            );
           })}
         </div>
         <div className="ProjectLinks">
           <a href={project.github} target="_blank" rel="noreferrer">
-            <img
-              src={githubIcon}
-              alt="Go to page"
-            />
+            <img src={githubIcon} alt="Go to page" />
           </a>
           <a href={project.url} target="_blank" rel="noreferrer">
-            <img
-              src={externalIcon}
-              alt="Github icon"
-            />
+            <img src={externalIcon} alt="Github icon" />
           </a>
         </div>
       </div>
