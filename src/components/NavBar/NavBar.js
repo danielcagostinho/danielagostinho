@@ -18,7 +18,7 @@ const NavBar = ({ showName }) => {
 
   return (
     <div className="NavWrapper">
-      <div className="NavBar">
+      <div className="NavBar content">
         <div className="NameHeader">
           <AnimatePresence>
             {showName && (

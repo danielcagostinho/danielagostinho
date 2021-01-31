@@ -1,26 +1,12 @@
-/* Breakpoint Sizes */
-$screenWidthB1: 681px;
-$screenWidthB2: 801px;
-$screenWidthB3: 1001px;
-$screenWidthB4: 1201px;
-$screenWidthB5: 1401px;
-$screenWidthB6: 1921px;
-
-$contentMaxWidthMobile: 80%;
-$contentMaxWidthB1: 80%;
-$contentMaxWidthB2: 70%;
-$contentMaxWidthB3: 70%;
-$contentMaxWidthB4: 60%;
-$contentMaxWidthB5: 60%;
-$contentMaxWidthB6: 50%;
+@import "../../design-tokens/scss-variables";
 
 $navLinkFontSizeMobile: 10px;
-$navLinkFontSizeB1: 10px;
-$navLinkFontSizeB2: 14px;
-$navLinkFontSizeB3: 16px;
-$navLinkFontSizeB4: 18px;
-$navLinkFontSizeB5: 18px;
-$navLinkFontSizeB6: 20px;
+$navLinkFontSizeB1: 12px;
+$navLinkFontSizeB2: 16px;
+$navLinkFontSizeB3: 18px;
+$navLinkFontSizeB4: 20px;
+$navLinkFontSizeB5: 22px;
+$navLinkFontSizeB6: 24px;
 
 .NavWrapper {
   /* Positioning */
@@ -43,14 +29,12 @@ $navLinkFontSizeB6: 20px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: var(--content-widthpct-large);
-    width: 100%;
     height: 100px;
 
     .NameHeader {
       p {
         /* Other */
-        font-size: 24px;
+        font-size: var(--font-size-h2-mobile);
         font-family: var(--font-family-primary);
       }
     }
@@ -93,14 +77,17 @@ $navLinkFontSizeB6: 20px;
 @media (min-width: $screenWidthB1) {
   .NavWrapper {
     .NavBar {
-      /* Display & Box Model */
-      width: $contentMaxWidthB1;
-    }
-
-    .NavLinks {
-      .NavLink {
-        /* Other */
-        font-size: $navLinkFontSizeB1;
+      .NameHeader {
+        p {
+          /* Other */
+          font-size: var(--font-size-h4-b1);
+        }
+      }
+      .NavLinks {
+        .NavLink {
+          /* Other */
+          font-size: $navLinkFontSizeB1;
+        }
       }
     }
   }
@@ -109,14 +96,17 @@ $navLinkFontSizeB6: 20px;
 @media (min-width: $screenWidthB2) {
   .NavWrapper {
     .NavBar {
-      /* Display & Box Model */
-      width: $contentMaxWidthB2;
-    }
-
-    .NavLinks {
-      .NavLink {
-        /* Other */
-        font-size: $navLinkFontSizeB2;
+      .NameHeader {
+        p {
+          /* Other */
+          font-size: var(--font-size-h4-b2);
+        }
+      }
+      .NavLinks {
+        .NavLink {
+          /* Other */
+          font-size: $navLinkFontSizeB2;
+        }
       }
     }
   }
@@ -125,14 +115,17 @@ $navLinkFontSizeB6: 20px;
 @media (min-width: $screenWidthB3) {
   .NavWrapper {
     .NavBar {
-      /* Display & Box Model */
-      width: $contentMaxWidthB3;
-    }
-
-    .NavLinks {
-      .NavLink {
-        /* Other */
-        font-size: $navLinkFontSizeB3;
+      .NameHeader {
+        p {
+          /* Other */
+          font-size: var(--font-size-h4-b3);
+        }
+      }
+      .NavLinks {
+        .NavLink {
+          /* Other */
+          font-size: $navLinkFontSizeB3;
+        }
       }
     }
   }
@@ -141,14 +134,17 @@ $navLinkFontSizeB6: 20px;
 @media (min-width: $screenWidthB4) {
   .NavWrapper {
     .NavBar {
-      /* Display & Box Model */
-      width: $contentMaxWidthB4;
-    }
-
-    .NavLinks {
-      .NavLink {
-        /* Other */
-        font-size: $navLinkFontSizeB4;
+      .NameHeader {
+        p {
+          /* Other */
+          font-size: var(--font-size-h4-b4);
+        }
+      }
+      .NavLinks {
+        .NavLink {
+          /* Other */
+          font-size: $navLinkFontSizeB4;
+        }
       }
     }
   }
@@ -157,14 +153,17 @@ $navLinkFontSizeB6: 20px;
 @media (min-width: $screenWidthB5) {
   .NavWrapper {
     .NavBar {
-      /* Display & Box Model */
-      width: $contentMaxWidthB5;
-    }
-
-    .NavLinks {
-      .NavLink {
-        /* Other */
-        font-size: $navLinkFontSizeB5;
+      .NameHeader {
+        p {
+          /* Other */
+          font-size: var(--font-size-h4-b5);
+        }
+      }
+      .NavLinks {
+        .NavLink {
+          /* Other */
+          font-size: $navLinkFontSizeB5;
+        }
       }
     }
   }
@@ -173,14 +172,17 @@ $navLinkFontSizeB6: 20px;
 @media (min-width: $screenWidthB6) {
   .NavWrapper {
     .NavBar {
-      /* Display & Box Model */
-      width: $contentMaxWidthB6;
-    }
-
-    .NavLinks {
-      .NavLink {
-        /* Other */
-        font-size: $navLinkFontSizeB6;
+      .NameHeader {
+        p {
+          /* Other */
+          font-size: var(--font-size-h4-b6);
+        }
+      }
+      .NavLinks {
+        .NavLink {
+          /* Other */
+          font-size: $navLinkFontSizeB6;
+        }
       }
     }
   }
