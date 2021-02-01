@@ -23,8 +23,8 @@ const contactLinks = [
 const ContactSection = () => {
   return (
     <div className="ContactSection">
-      <div className="ContactContent">
-        <h3>Contact Me</h3>
+      <div className="Contact content">
+        <h3>Get in touch:</h3>
         <div className="ContactLinks">
           {contactLinks.map((contactLink) => {
             return (
