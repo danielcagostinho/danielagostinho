@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 import Project from "./Project/Project";
 
-import archiveIcon from "../../assets/icons/ArchiveIcon.svg";
-
 import "./Projects.scss";
 
 const Projects = ({ projects, onEnter }) => {
@@ -18,18 +16,14 @@ const Projects = ({ projects, onEnter }) => {
 
   return (
     <motion.div
-      className="Projects"
+      className="Projects content"
       id="projects"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 1, duration: 2 }}
+      transition={{ delay: 1, duration: 2, staggerChildren: 0.5}}
     >
       <motion.h3>Featured Work</motion.h3>
       <motion.div className="ProjectsContainer">{projectsDisplay}</motion.div>
-      {/* <div className="ArchiveLink">
-        <h3>View Archive</h3>
-        <img src={archiveIcon} alt="Archive Icon" />
-      </div> */}
     </motion.div>
   );
 };

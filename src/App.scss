@@ -16,6 +16,7 @@
 
 h1 {
   font-family: var(--font-family-primary);
+  font-size: var(--font-size-h1-mobile);
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -23,6 +24,7 @@ h1 {
 }
 
 h2 {
+  font-size: var(--font-size-h2-mobile);
   font-family: var(--font-family-primary-light);
   font-weight: 400;
   padding: 0;
@@ -30,6 +32,7 @@ h2 {
 }
 
 h3 {
+  font-size: var(--font-size-h3-mobile);
   font-family: var(--font-family-primary);
   font-weight: 400;
   padding: 0;
@@ -37,6 +40,7 @@ h3 {
 }
 
 h4 {
+  font-size: var(--font-size-h4-mobile);
   font-family: var(--font-family-primary);
   font-weight: 400;
   padding: 0;
@@ -44,6 +48,7 @@ h4 {
 }
 
 p {
+  font-size: var(--font-size-p1-mobile);
   font-family: var(--font-family-primary-light);
   padding: 0;
   margin: 0;

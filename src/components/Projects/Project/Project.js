@@ -49,12 +49,21 @@ const Project = ({ project, flipped }) => {
   const animationVariants = {
     visible: {
       opacity: 1,
-      y: [0, -50, 0],
-      transition: { duration: 0.5, delay: 0 },
+      y: 0,
+      transition: {
+        opacity: {
+          duration: 1,
+          delay: 0.2,
+        },
+        y: {
+          duration: 0.5,
+          delay: 0,
+        },
+      },
     },
     hidden: {
       opacity: 0,
-      y: 100,
+      y: 50,
     },
   };
 

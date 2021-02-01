@@ -1,25 +1,59 @@
+@import "../../design-tokens/scss-variables";
 .LanguagePill {
   /* Display & Box Model */
   display: grid;
   place-items: center;
-  margin: 8px;
-  margin-bottom: 16px;
-  border-radius: 16px;
-  // padding: 0px 12px 4px 12px !important;
-  padding: 8px 12px 6px 12px;
-
-
-  // padding: 4px !important;
+  margin: 0 4px;
+  border-radius: 20px;
+  padding: 6px 12px 4px 12px;
 
   p {
     /* Other */
-    margin: 0 !important;
+    margin: 0 0 !important;
     padding: 0 !important;
     width: 100% !important;
     color: white;
-    // font-size: var(--font-size-p1-b6) !important;
-    // font-family: var(--font-family-primary);
-    // font-weight: 400 !important;
-    // line-height: $fontSizeProjectP1Mobile;
+  }
+}
+
+@media (min-width: $screenWidthB1) {
+  .LanguagePill {
+    margin: 0 4px;
+    padding: 6px 6px 4px 6px;
+  }
+}
+
+@media (min-width: $screenWidthB2) {
+  .LanguagePill {
+    margin: 0 4px;
+    padding: 6px 8px 3px 8px;
+  }
+}
+
+@media (min-width: $screenWidthB3) {
+  .LanguagePill {
+    margin: 0 6px;
+    padding: 6px 12px 3px 12px;
+  }
+}
+
+@media (min-width: $screenWidthB4) {
+  .LanguagePill {
+    margin: 0 6px;
+    padding: 6px 12px 3px 12px;
+  }
+}
+
+@media (min-width: $screenWidthB5) {
+  .LanguagePill {
+    margin: 0 8px;
+    padding: 12px 16px 6px 16px;
+  }
+}
+
+@media (min-width: $screenWidthB6) {
+  .LanguagePill {
+    margin: 0 8px;
+    padding: 8px 20px 6px 20px;
   }
 }
