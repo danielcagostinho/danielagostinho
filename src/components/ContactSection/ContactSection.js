@@ -4,7 +4,7 @@ import "./ContactSection.scss";
 
 import mailIcon from "../../assets/icons/MailIcon.svg";
 import githubIcon from "../../assets/icons/GithubIconWhite.png";
-import twitterIcon from '../../assets/icons/TwitterIcon.svg';
+import twitterIcon from "../../assets/icons/TwitterIcon.svg";
 
 const contactLinks = [
   {
@@ -17,12 +17,16 @@ const contactLinks = [
     url: "https://github.com/danielcagostinho",
     icon: githubIcon,
   },
-  { name: "twitter", url: "https://twitter.com/agostinhodev", icon: twitterIcon },
+  {
+    name: "twitter",
+    url: "https://twitter.com/agostinhodev",
+    icon: twitterIcon,
+  },
 ];
 
 const ContactSection = () => {
   return (
-    <div className="ContactSection">
+    <div className="ContactSection" id="contact">
       <div className="Contact content">
         <h3>Get in touch:</h3>
         <div className="ContactLinks">

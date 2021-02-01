@@ -26,34 +26,39 @@
 @media (min-width: $screenWidthB2) {
   .LanguagePill {
     margin: 0 4px;
-    padding: 6px 8px 3px 8px;
+  border-radius: 20px;
+  padding: 6px 8px 3px 8px;
   }
 }
 
 @media (min-width: $screenWidthB3) {
   .LanguagePill {
     margin: 0 6px;
-    padding: 6px 12px 3px 12px;
+  border-radius: 20px;
+  padding: 6px 12px 3px 12px;
   }
 }
 
 @media (min-width: $screenWidthB4) {
   .LanguagePill {
     margin: 0 6px;
-    padding: 6px 12px 3px 12px;
+  border-radius: 20px;
+  padding: 6px 12px 3px 12px;
   }
 }
 
 @media (min-width: $screenWidthB5) {
   .LanguagePill {
     margin: 0 8px;
-    padding: 12px 16px 6px 16px;
+  border-radius: 20px;
+  padding: 6px 16px 3px 16px;
   }
 }
 
 @media (min-width: $screenWidthB6) {
   .LanguagePill {
     margin: 0 8px;
-    padding: 8px 20px 6px 20px;
-  }
+    padding: 6px 20px 3px 20px;
+  border-radius: 40px;
+}
 }

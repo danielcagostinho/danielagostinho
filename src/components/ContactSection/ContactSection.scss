@@ -119,6 +119,9 @@ $iconSizeB6: 40px;
   .ContactSection {
     .Contact {
       .ContactLinks {
+        /* Display & Box Model */
+        max-width: 30%;
+        
         .ContactLink {
           img {
             /* Display & Box Model */

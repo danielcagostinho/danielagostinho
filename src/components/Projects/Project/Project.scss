@@ -37,10 +37,11 @@
 
     h4 {
       /* Display & Box Model */
-      margin-bottom: 8px;
+      margin-bottom: 16px;
     }
 
     p {
+      /* Display & Box Model */
       margin-bottom: 16px;
     }
 
@@ -66,11 +67,6 @@
       width: 24px;
       height: 24px;
       margin: 8px 0;
-
-      // &:nth-child(even) {
-      //   margin-right: -4px;
-      //   margin-left: 16px;
-      // }
     }
   }
 }
@@ -83,28 +79,6 @@
     column-gap: 40px;
     margin-bottom: 40px;
 
-    // &:nth-child(even) {
-    //   .ProjectDescription {
-    //     /* Display & Box Model */
-    //     // order: -1;
-    //     align-items: flex-start;
-
-    //     /* Other */
-    //     text-align: left;
-
-    //     .pills {
-    //       /* Display & Box Model */
-    //       margin-left: -8px;
-    //       margin-right: 8px;
-    //     }
-    //   }
-
-    //   .ProjectLinks {
-    //     /* Display & Box Model */
-    //     justify-content: flex-start;
-    //   }
-    // }
-
     .ProjectDescription {
       /* Display & Box Model */
       justify-content: flex-start;
@@ -116,7 +90,7 @@
 
       h4 {
         /* Display & Box Model */
-        margin-bottom: 8px;
+        margin-bottom: 16px;
       }
 
       p {
@@ -125,7 +99,6 @@
 
       .pills {
         /* Display & Box Model */
-        // margin-left: 8px;
         margin-right: -8px;
         margin-bottom: 16px;
       }
@@ -139,6 +112,8 @@
         /* Display & Box Model */
         width: 24px;
         height: 24px;
+
+        transition: all 0.3s ease-in-out;
 
         &:hover {
           /* Other */
@@ -162,36 +137,22 @@
 
 @media (min-width: $screenWidthB3) {
   .Project {
-    // &:nth-child(even) {
-    //   .ProjectDescription {
-    //     .pills {
-    //       /* Display & Box Model */
-    //       margin-right: 16px;
-    //     }
-    //   }
-    // }
 
     .ProjectDescription {
       h4 {
         /* Display & Box Model */
-        margin-bottom: 12px;
+        margin-bottom: 20px;
       }
 
       p {
         /* Display & Box Model */
-        width: 60%;
-        margin-bottom: 24px;
-
-        &:nth-last-child(n) {
-          /* Display & Box Model */
-          width: 80%;
-        }
+        width: 80%;
+        margin-bottom: 20px;
       }
 
       .pills {
         /* Display & Box Model */
-        // width: 80%;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         margin-left: 16px;
       }
     }
@@ -208,35 +169,22 @@
 
 @media (min-width: $screenWidthB4) {
   .Project {
-    // &:nth-child(even) {
-    //   .ProjectDescription {
-    //     .pills {
-    //       /* Display & Box Model */
-    //       margin-right: 16px;
-    //     }
-    //   }
-    // }
 
     .ProjectDescription {
       h4 {
-        margin-bottom: 12px;
+        margin-bottom: 24px;
       }
 
       p {
         /* Display & Box Model */
-        width: 60%;
+        width: 80%;
         margin-bottom: 24px;
-
-        &:nth-last-child(n) {
-          /* Display & Box Model */
-          width: 80%;
-        }
       }
 
       .pills {
         /* Display & Box Model */
-        // width: 80%;
         margin-left: 16px;
+        margin-bottom: 24px;
       }
     }
 
@@ -252,37 +200,25 @@
 
 @media (min-width: $screenWidthB5) {
   .Project {
-    // &:nth-child(even) {
-    //   .ProjectDescription {
-    //     .pills {
-    //       /* Display & Box Model */
-    //       margin-right: 16px;
-    //     }
-    //   }
-    // }
-
+    /* Display & Box Model */
     margin-bottom: 60px;
 
     .ProjectDescription {
       h4 {
         /* Display & Box Model */
-        margin-bottom: 16px;
+        margin-bottom: 28px;
       }
 
       p {
         /* Display & Box Model */
-        width: 60%;
-        margin-bottom: 32px;
+        // width: 80%;
+        margin-bottom: 28px;
 
-        &:nth-last-child(n) {
-          /* Display & Box Model */
-          width: 80%;
-        }
       }
 
       .pills {
         /* Display & Box Model */
-        margin-bottom: 32px;
+        margin-bottom: 28px;
         margin-left: 16px;
       }
     }
@@ -299,34 +235,22 @@
 
 @media (min-width: $screenWidthB6) {
   .Project {
-    // &:nth-child(even) {
-    //   .ProjectDescription {
-    //     .pills {
-    //       /* Display & Box Model */
-    //       margin-right: 16px;
-    //     }
-    //   }
-    // }
 
     .ProjectDescription {
       h4 {
         /* Display & Box Model */
-        margin-bottom: 20px;
+        margin-bottom: 24px;
       }
 
       p {
-        margin-bottom: 40px;
-
-        &:nth-last-child(n) {
-          /* Display & Box Model */
-          width: 80%;
-        }
+        /* Display & Box Model */
+        margin-bottom: 24px;
+        // width: 50%;
       }
 
       .pills {
         /* Display & Box Model */
-        // width: 80%;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
         margin-left: 16px;
       }
     }
