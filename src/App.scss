@@ -13,7 +13,6 @@
   width: $contentMaxWidthMobile;
 }
 
-
 h1 {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-h1-mobile);
@@ -58,6 +57,7 @@ p {
 @media (min-width: $screenWidthB1) {
   .content {
     width: $contentMaxWidthB1;
+    max-width: $contentMaxWidthB1;
   }
   @include global-fonts(
     var(--font-size-h1-b1),
@@ -71,6 +71,7 @@ p {
 @media (min-width: $screenWidthB2) {
   .content {
     width: $contentMaxWidthB2;
+    max-width: $contentMaxWidthB2;
   }
   @include global-fonts(
     var(--font-size-h1-b2),
@@ -84,6 +85,7 @@ p {
 @media (min-width: $screenWidthB3) {
   .content {
     width: $contentMaxWidthB3;
+    max-width: $contentMaxWidthB3;
   }
 
   @include global-fonts(
@@ -98,6 +100,7 @@ p {
 @media (min-width: $screenWidthB4) {
   .content {
     width: $contentMaxWidthB4;
+    max-width: $contentMaxWidthB4;
   }
   @include global-fonts(
     var(--font-size-h1-b4),
@@ -111,6 +114,7 @@ p {
 @media (min-width: $screenWidthB5) {
   .content {
     width: $contentMaxWidthB5;
+    max-width: $contentMaxWidthB5;
   }
   @include global-fonts(
     var(--font-size-h1-b5),
@@ -124,6 +128,7 @@ p {
 @media (min-width: $screenWidthB6) {
   .content {
     width: $contentMaxWidthB6;
+    max-width: $contentMaxWidthB6;
   }
   @include global-fonts(
     var(--font-size-h1-b6),
@@ -133,4 +138,3 @@ p {
     var(--font-size-p1-b6)
   );
 }
-

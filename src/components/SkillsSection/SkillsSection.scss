@@ -1,3 +1,4 @@
+@import "../../design-tokens/scss-variables";
 /* Mobile Variables */
 $widthBubbleMobile: 80px;
 $floatDistanceMobile: -5px;
@@ -18,6 +19,72 @@ $floatDistanceB2: -16px;
 $widthBubbleLarge: 160px;
 $floatDistanceLarge: -20px;
 
+$floatAnimationDuration: 3s;
+
+@mixin bubblePosition($widthBubble) {
+  img {
+    /* Positioning */
+    position: absolute;
+    /* Display & Box Model */
+    width: $widthBubble * 0.5;
+    height: $widthBubble * 0.5;
+  }
+
+  .SmallImage1 {
+    /* Positioning */
+    top: $widthBubble * -0.75;
+    left: $widthBubble * -0.75;
+
+    /* Other */
+    animation-delay: $floatAnimationDuration * 1/6;
+  }
+
+  .SmallImage2 {
+    /* Positioning */
+    top: $widthBubble * -0.75;
+    left: $widthBubble * 0.25;
+
+    /* Other */
+    animation-delay: $floatAnimationDuration * 2/6;
+  }
+
+  .SmallImage3 {
+    /* Positioning */
+    top: $widthBubble * 0.25;
+    left: $widthBubble * 1;
+
+    /* Other */
+    animation-delay: $floatAnimationDuration * 3/6;
+  }
+
+  .SmallImage4 {
+    /* Positioning */
+    top: $widthBubble * 1.25;
+    left: $widthBubble * 0.25;
+
+    /* Other */
+    animation-delay: $floatAnimationDuration * 4/6;
+  }
+
+  .SmallImage5 {
+    /* Positioning */
+    top: $widthBubble * 1.25;
+    left: $widthBubble * -0.75;
+
+    /* Other */
+    animation-delay: $floatAnimationDuration * 5/6;
+  }
+
+  .SmallImage6 {
+    /* Positioning */
+    top: $widthBubble * 0.25;
+    left: $widthBubble * -1.5;
+
+    /* Other */
+    animation-delay: $floatAnimationDuration;
+  }
+}
+
 .SkillsSection {
   /* Display & Box Model */
   display: flex;
@@ -36,7 +103,7 @@ $floatDistanceLarge: -20px;
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    // border: 1px solid red;
+    height: 40vh;
 
     .Column {
       /* Display & Box Model */
@@ -44,50 +111,28 @@ $floatDistanceLarge: -20px;
       flex-direction: column;
       // height: 100%;
 
-      p {
-        /* Display & Box Model */
-        padding: 0;
-        margin: 0;
-      }
-
       .Title {
         /* Display & Box Model */
-        margin-bottom: 8px !important;
+        margin-bottom: 8px;
 
         /* Other */
         color: white;
-        font-family: var(--font-family-primary);
-        line-height: 150%;
         text-align: center;
-      }
-
-      .Subtitle {
-        /* Other */
-        color: white;
-        font-family: var(--font-family-secondary);
       }
 
       .MainImageContainer {
         /* Display & Box Model */
         width: $widthBubbleMobile;
         height: $widthBubbleMobile;
-        margin-bottom: $widthBubbleMobile;
-        margin-top: $widthBubbleMobile * 1.5;
         border-radius: 50%;
-        box-sizing: content-box;
 
         /* Other */
-        animation: float 6s ease-in-out infinite;
+        animation: float $floatAnimationDuration ease-in-out infinite;
 
         img {
           /* Display & Box Model */
           width: 100%;
           height: 100%;
-
-          &:hover {
-            /* Other */
-            // cursor: pointer;
-          }
         }
       }
 
@@ -95,85 +140,21 @@ $floatDistanceLarge: -20px;
         /* Positioning */
         position: absolute;
 
-        /* Display & Box Model */
-        margin-top: $widthBubbleMobile * 1.5;
-
         img {
           /* Display & Box Model */
           width: $widthBubbleMobile * 0.5;
           height: $widthBubbleMobile * 0.5;
           border-radius: 50%;
+          background-color: white;
+          object-fit: scale-down;
 
           /* Other */
-          animation: float 6s ease-in-out infinite;
+          animation: float $floatAnimationDuration ease-in-out infinite;
           transform: translatey(0px);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-
-          &:hover {
-            /* Other */
-            // cursor: pointer;
-          }
         }
 
-        .SmallImage1 {
-          /* Positioning */
-          position: absolute;
-          top: $widthBubbleMobile * -0.75;
-          left: $widthBubbleMobile * -0.25;
-
-          /* Other */
-          animation-delay: 0.5s;
-        }
-
-        .SmallImage2 {
-          /* Positioning */
-          position: absolute;
-          top: $widthBubbleMobile * -0.75;
-          left: $widthBubbleMobile * 0.75;
-
-          /* Other */
-          animation-delay: 1s;
-        }
-
-        .SmallImage3 {
-          /* Positioning */
-          position: absolute;
-          top: $widthBubbleMobile * 0.25;
-          left: $widthBubbleMobile * -1;
-
-          /* Other */
-          animation-delay: 1.5s;
-        }
-
-        .SmallImage4 {
-          /* Positioning */
-          position: absolute;
-          top: $widthBubbleMobile * 0.25;
-          left: $widthBubbleMobile * 1.5;
-
-          /* Other */
-          animation-delay: 2s;
-        }
-
-        .SmallImage5 {
-          /* Positioning */
-          position: absolute;
-          top: $widthBubbleMobile * 1.25;
-          left: $widthBubbleMobile * -0.25;
-
-          /* Other */
-          animation-delay: 2.5s;
-        }
-
-        .SmallImage6 {
-          /* Positioning */
-          position: absolute;
-          top: $widthBubbleMobile * 1.25;
-          left: $widthBubbleMobile * 0.75;
-
-          /* Other */
-          animation-delay: 3s;
-        }
+        @include bubblePosition($widthBubbleMobile);
       }
     }
     @keyframes float {
@@ -193,91 +174,41 @@ $floatDistanceLarge: -20px;
   }
 }
 
-@media (min-width: 681px) {
+@media (min-width: $screenWidthB1) {
   .SkillsSection {
     /* Display & Box Model */
     height: 50vh;
-    padding: $widthBubbleMedium;
 
     .Container {
       /* Display & Box Model */
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      width: 80%;
 
       .Column {
         /* Display & Box Model */
         display: flex;
         flex-direction: column;
-        height: 1fr;
         align-items: center;
 
         .Title {
           /* Display & Box Model */
-          // margin-top: $widthBubbleMedium * 1.5 !important;
-          margin-bottom: $widthBubbleMedium * 1 !important;
-          /* Other */
-        }
-
-        .Subtitle {
-          /* Other */
+          margin: 0;
         }
 
         .MainImageContainer {
           /* Display & Box Model */
           width: $widthBubbleMedium;
           height: $widthBubbleMedium;
-          margin-top: $widthBubbleMedium * 1.5;
-          margin-bottom: $widthBubbleMedium;
+          margin-right: $widthBubbleMedium;
         }
 
         .SmallImageContainer {
           /* Display & Box Model */
-          margin-top: $widthBubbleMedium * 1.5;
+          padding-right: $widthBubbleMedium;
 
-          img {
-            /* Display & Box Model */
-            width: $widthBubbleMedium * 0.5;
-            height: $widthBubbleMedium * 0.5;
-          }
-
-          .SmallImage1 {
-            /* Positioning */
-            top: $widthBubbleMedium * -0.75;
-            left: $widthBubbleMedium * -0.75;
-          }
-
-          .SmallImage2 {
-            /* Positioning */
-            top: $widthBubbleMedium * -0.75;
-            left: $widthBubbleMedium * 0.25;
-          }
-
-          .SmallImage3 {
-            /* Positioning */
-            top: $widthBubbleMedium * 0.25;
-            left: $widthBubbleMedium * -1.5;
-          }
-
-          .SmallImage4 {
-            /* Positioning */
-            top: $widthBubbleMedium * 0.25;
-            left: $widthBubbleMedium * 1;
-          }
-
-          .SmallImage5 {
-            /* Positioning */
-            top: $widthBubbleMedium * 1.25;
-            left: $widthBubbleMedium * -0.75;
-          }
-
-          .SmallImage6 {
-            /* Positioning */
-            top: $widthBubbleMedium * 1.25;
-            left: $widthBubbleMedium * 0.25;
-          }
+          @include bubblePosition($widthBubbleMedium);
         }
       }
     }
@@ -299,78 +230,21 @@ $floatDistanceLarge: -20px;
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: $screenWidthB2) {
   .SkillsSection {
     .Container {
       /* Display & Box Model */
-      // flex-direction: row;
 
       .Column {
-        /* Display & Box Model */
-        // max-width: 40%;
-
-        .Title {
-          /* Other */
-        }
-
-        .Subtitle {
-          /* Other */
-        }
-
         .MainImageContainer {
           /* Display & Box Model */
           width: $widthBubbleB1;
           height: $widthBubbleB1;
-          // margin-top: 0;
-          // margin-bottom: 0;
-          // margin-right: $widthBubbleB1;
         }
 
         .SmallImageContainer {
           /* Display & Box Model */
-          // margin-top: $widthBubbleMedium * 1.5;
-          // margin-top: 0;
-          img {
-            /* Display & Box Model */
-            width: $widthBubbleB1 * 0.5;
-            height: $widthBubbleB1 * 0.5;
-          }
-
-          .SmallImage1 {
-            /* Positioning */
-            top: $widthBubbleB1 * -0.75;
-            left: $widthBubbleB1 * -0.75;
-          }
-
-          .SmallImage2 {
-            /* Positioning */
-            top: $widthBubbleB1 * -0.75;
-            left: $widthBubbleB1 * 0.25;
-          }
-
-          .SmallImage3 {
-            /* Positioning */
-            top: $widthBubbleB1 * 0.25;
-            left: $widthBubbleB1 * -1.5;
-          }
-
-          .SmallImage4 {
-            /* Positioning */
-            top: $widthBubbleB1 * 0.25;
-            left: $widthBubbleB1 * 1;
-          }
-
-          .SmallImage5 {
-            /* Positioning */
-            top: $widthBubbleB1 * 1.25;
-            left: $widthBubbleB1 * -0.75;
-          }
-
-          .SmallImage6 {
-            /* Positioning */
-            top: $widthBubbleB1 * 1.25;
-            left: $widthBubbleB1 * 0.25;
-          }
+          @include bubblePosition($widthBubbleB1);
         }
       }
     }
@@ -391,72 +265,20 @@ $floatDistanceLarge: -20px;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: $screenWidthB4) {
   .SkillsSection {
     .Container {
-      /* Display & Box Model */
-      width: 60%;
-
       .Column {
-        .Title {
-          /* Other */
-        }
-
-        .Subtitle {
-          /* Other */
-        }
-
         .MainImageContainer {
           /* Display & Box Model */
           width: $widthBubbleB2;
           height: $widthBubbleB2;
-          margin-top: $widthBubbleB2;
         }
 
         .SmallImageContainer {
           /* Display & Box Model */
-          margin-top: $widthBubbleB2;
-          img {
-            /* Display & Box Model */
-            width: $widthBubbleB2 * 0.5;
-            height: $widthBubbleB2 * 0.5;
-          }
 
-          .SmallImage1 {
-            /* Positioning */
-            top: $widthBubbleB2 * -0.75;
-            left: $widthBubbleB2 * -0.75;
-          }
-
-          .SmallImage2 {
-            /* Positioning */
-            top: $widthBubbleB2 * -0.75;
-            left: $widthBubbleB2 * 0.25;
-          }
-
-          .SmallImage3 {
-            /* Positioning */
-            top: $widthBubbleB2 * 0.25;
-            left: $widthBubbleB2 * -1.5;
-          }
-
-          .SmallImage4 {
-            /* Positioning */
-            top: $widthBubbleB2 * 0.25;
-            left: $widthBubbleB2 * 1;
-          }
-
-          .SmallImage5 {
-            /* Positioning */
-            top: $widthBubbleB2 * 1.25;
-            left: $widthBubbleB2 * -0.75;
-          }
-
-          .SmallImage6 {
-            /* Positioning */
-            top: $widthBubbleB2 * 1.25;
-            left: $widthBubbleB2 * 0.25;
-          }
+          @include bubblePosition($widthBubbleB2);
         }
       }
     }
@@ -477,17 +299,11 @@ $floatDistanceLarge: -20px;
   }
 }
 
-@media (min-width: 1601px) {
+@media (min-width: $screenWidthB5) {
   .SkillsSection {
+    height: 60vh;
     .Container {
       .Column {
-        .Title {
-          /* Other */
-        }
-
-        .Subtitle {
-          /* Other */
-        }
         .MainImageContainer {
           /* Display & Box Model */
           width: $widthBubbleLarge;
@@ -495,47 +311,7 @@ $floatDistanceLarge: -20px;
         }
 
         .SmallImageContainer {
-          img {
-            /* Display & Box Model */
-            width: $widthBubbleLarge * 0.5;
-            height: $widthBubbleLarge * 0.5;
-          }
-
-          .SmallImage1 {
-            /* Positioning */
-            top: $widthBubbleLarge * -0.75;
-            left: $widthBubbleLarge * -0.75;
-          }
-
-          .SmallImage2 {
-            /* Positioning */
-            top: $widthBubbleLarge * -0.75;
-            left: $widthBubbleLarge * 0.25;
-          }
-
-          .SmallImage3 {
-            /* Positioning */
-            top: $widthBubbleLarge * 0.25;
-            left: $widthBubbleLarge * -1.5;
-          }
-
-          .SmallImage4 {
-            /* Positioning */
-            top: $widthBubbleLarge * 0.25;
-            left: $widthBubbleLarge * 1;
-          }
-
-          .SmallImage5 {
-            /* Positioning */
-            top: $widthBubbleLarge * 1.25;
-            left: $widthBubbleLarge * -0.75;
-          }
-
-          .SmallImage6 {
-            /* Positioning */
-            top: $widthBubbleLarge * 1.25;
-            left: $widthBubbleLarge * 0.25;
-          }
+          @include bubblePosition($widthBubbleLarge);
         }
       }
     }

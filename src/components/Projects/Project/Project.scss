@@ -135,6 +135,38 @@
   }
 }
 
+@media (min-width: $screenWidthB2) {
+  .Project {
+
+    .ProjectDescription {
+      h4 {
+        /* Display & Box Model */
+        margin-bottom: 20px;
+      }
+
+      p {
+        /* Display & Box Model */
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .pills {
+        /* Display & Box Model */
+        margin-bottom: 20px;
+        margin-left: 16px;
+      }
+    }
+
+    .ProjectLinks {
+      img {
+        /* Display & Box Model */
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}
+
 @media (min-width: $screenWidthB3) {
   .Project {
 

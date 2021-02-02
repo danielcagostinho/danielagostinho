@@ -5,15 +5,16 @@ $iconSizeB1: 32px;
 $iconSizeB2: 32px;
 $iconSizeB3: 36px;
 $iconSizeB4: 36px;
-$iconSizeB5: 40px;
-$iconSizeB6: 40px;
+$iconSizeB5: 44px;
+$iconSizeB6: 48px;
 
 .ContactSection {
   /* Display & Box Model */
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 100px 0;
+  height: 30vh;
+  // padding: 100px 0;
 
   /* Other */
   background-color: var(--color-primary);
@@ -63,6 +64,7 @@ $iconSizeB6: 40px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      
       h3 {
         /* Other */
         text-align: left;
@@ -120,8 +122,8 @@ $iconSizeB6: 40px;
     .Contact {
       .ContactLinks {
         /* Display & Box Model */
-        max-width: 30%;
-        
+        max-width: 40%;
+
         .ContactLink {
           img {
             /* Display & Box Model */
