@@ -50,7 +50,7 @@ class App extends Component {
           { name: "Node.js", color: "#8CC84B" },
         ],
         github: "https://github.com/danielcagostinho/DKFilms",
-        url: "",
+        url: "https://danielcagostinho.github.io/DKFilms/#/",
       },
       {
         name: "React Weather",
@@ -63,7 +63,7 @@ class App extends Component {
           { name: "Node.js", color: "#8CC84B" },
         ],
         github: "https://github.com/danielcagostinho/ReactWeather",
-        url: "https://pacific-cliffs-73088.herokuapp.com/",
+        url: "https://danielcagostinho.github.io/ReactWeather/",
       },
       {
         name: "React ToDo List",
@@ -76,7 +76,7 @@ class App extends Component {
           { name: "Node.js", color: "#8CC84B" },
         ],
         github: "https://github.com/danielcagostinho/ReactTodo",
-        url: "https://damp-shore-14787.herokuapp.com/",
+        url: "https://danielcagostinho.github.io/ReactTodo/",
       },
     ],
     employers: [
