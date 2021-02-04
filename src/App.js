@@ -38,7 +38,7 @@ class App extends Component {
           { name: "Node.js", color: "#8CC84B" },
         ],
         github: "https://github.com/danielcagostinho/TrigoBakery",
-        url: "https://immense-tundra-33861.herokuapp.com/",
+        url: "https://danielcagostinho.github.io/TrigoBakery/#/TrigoBakery/",
       },
       {
         name: "Dan Kim Films",
