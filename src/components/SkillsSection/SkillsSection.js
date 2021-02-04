@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import reactIcon from "../../assets/icons/ReactIcon.svg";
 import html5Icon from "../../assets/icons/HTML5Icon.svg";
 import css3Icon from "../../assets/icons/CSS3Icon.svg";
-import jQueryIcon from "../../assets/icons/jQueryIcon.svg";
+import reduxIcon from "../../assets/icons/ReduxIcon.svg";
 import nodeIcon from "../../assets/icons/NodeIcon.png";
 import sassIcon from "../../assets/icons/SassIcon.svg";
 import figmaIcon from "../../assets/icons/FigmaIcon.png";
@@ -42,8 +42,12 @@ const SkillsSection = () => {
             <img src={css3Icon} alt="CSS3 Icon" className="SmallImage2" />
             <img src={sassIcon} alt="Sass Icon" className="SmallImage3" />
             <img src={figmaIcon} alt="Figma Icon" className="SmallImage4" />
-            <img src={nodeIcon} alt="Node Icon" className="SmallImage5" />
-            <img src={jQueryIcon} alt="jQuery Icon" className="SmallImage6" />
+            <div className="SmallImage5">
+              <img src={nodeIcon} alt="Node Icon" />
+            </div>
+            <div className="SmallImage6">
+              <img src={reduxIcon} alt="Redux Icon" />
+            </div>
           </div>
         </motion.div>
       </div>

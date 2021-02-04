@@ -68,20 +68,49 @@ $floatAnimationDuration: 3s;
 
   .SmallImage5 {
     /* Positioning */
+    position: absolute;
     top: $widthBubble * 1.25;
     left: $widthBubble * -0.75;
 
+    /* Display & Box Model */
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: $widthBubble * 0.5;
+    height: $widthBubble * 0.5;
+
     /* Other */
     animation-delay: $floatAnimationDuration * 5/6;
+    background-color: white;
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
   }
 
   .SmallImage6 {
     /* Positioning */
+    position: absolute;
     top: $widthBubble * 0.25;
     left: $widthBubble * -1.5;
 
+    /* Display & Box Model */
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    width: $widthBubble * 0.5;
+    height: $widthBubble * 0.5;
+
     /* Other */
     animation-delay: $floatAnimationDuration;
+    background-color: white;
+
+    img {
+      width: 60%;
+      height: 60%;
+      border-radius: 0;
+    }
   }
 }
 
@@ -152,6 +181,33 @@ $floatAnimationDuration: 3s;
           animation: float $floatAnimationDuration ease-in-out infinite;
           transform: translatey(0px);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        }
+        .SmallImage5 {
+          /* Other */
+          animation: float $floatAnimationDuration ease-in-out infinite;
+          transform: translatey(0px);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+
+          img {
+            /* Other */
+            animation: none;
+            transform: translatey(0px);
+            box-shadow: none;
+          }
+        }
+
+        .SmallImage6 {
+          /* Other */
+          animation: float $floatAnimationDuration ease-in-out infinite;
+          transform: translatey(0px);
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+
+          img {
+            /* Other */
+            animation: none;
+            transform: translatey(0px);
+            box-shadow: none;
+          }
         }
 
         @include bubblePosition($widthBubbleMobile);
