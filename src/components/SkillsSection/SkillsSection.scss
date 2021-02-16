@@ -120,7 +120,7 @@ $floatAnimationDuration: 3s;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
 
   /* Other */
   background-color: var(--color-primary);
@@ -210,7 +210,97 @@ $floatAnimationDuration: 3s;
           }
         }
 
-        @include bubblePosition($widthBubbleMobile);
+        img {
+          /* Positioning */
+          position: absolute;
+          /* Display & Box Model */
+          width: $widthBubbleMobile * 0.5;
+          height: $widthBubbleMobile * 0.5;
+        }
+      
+        .SmallImage1 {
+          /* Positioning */
+          top: $widthBubbleMobile * -0.75;
+          left: $widthBubbleMobile * -0.25;
+      
+          /* Other */
+          animation-delay: $floatAnimationDuration * 1/6;
+        }
+      
+        .SmallImage2 {
+          /* Positioning */
+          top: $widthBubbleMobile * -0.75;
+          left: $widthBubbleMobile * 0.75;
+      
+          /* Other */
+          animation-delay: $floatAnimationDuration * 2/6;
+        }
+      
+        .SmallImage3 {
+          /* Positioning */
+          top: $widthBubbleMobile * 0.25;
+          left: $widthBubbleMobile * 1.5;
+      
+          /* Other */
+          animation-delay: $floatAnimationDuration * 3/6;
+        }
+      
+        .SmallImage4 {
+          /* Positioning */
+          top: $widthBubbleMobile * 1.25;
+          left: $widthBubbleMobile * 0.75;
+      
+          /* Other */
+          animation-delay: $floatAnimationDuration * 4/6;
+        }
+      
+        .SmallImage5 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * 1.25;
+          left: $widthBubbleMobile * -0.25;
+      
+          /* Display & Box Model */
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          width: $widthBubbleMobile * 0.5;
+          height: $widthBubbleMobile * 0.5;
+      
+          /* Other */
+          animation-delay: $floatAnimationDuration * 5/6;
+          background-color: white;
+      
+          img {
+            width: 80%;
+            height: 80%;
+          }
+        }
+      
+        .SmallImage6 {
+          /* Positioning */
+          position: absolute;
+          top: $widthBubbleMobile * 0.25;
+          left: $widthBubbleMobile * -1;
+      
+          /* Display & Box Model */
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          width: $widthBubbleMobile * 0.5;
+          height: $widthBubbleMobile * 0.5;
+      
+          /* Other */
+          animation-delay: $floatAnimationDuration;
+          background-color: white;
+      
+          img {
+            width: 60%;
+            height: 60%;
+            border-radius: 0;
+          }
+        }
+
       }
     }
     @keyframes float {
