@@ -18,7 +18,7 @@ $navLinkFontSizeB6: 24px;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100px;
+  height: $navBarHeight;
 
   /* Other */
   background-color: white;
@@ -34,7 +34,7 @@ $navLinkFontSizeB6: 24px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: $navBarHeight;
 
     .NameHeader {
       p {

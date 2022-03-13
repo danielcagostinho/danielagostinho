@@ -1,34 +1,28 @@
 @import "../../design-tokens/scss-variables";
 
-$iconSizeMobile: 24px;
-$iconSizeB1: 32px;
-$iconSizeB2: 32px;
-$iconSizeB3: 36px;
-$iconSizeB4: 36px;
-$iconSizeB5: 44px;
-$iconSizeB6: 48px;
+$iconSizeMobile: 16px;
+$iconSizeB1: 20px;
+$iconSizeB2: 24px;
+$iconSizeB3: 30px;
+$iconSizeB4: 30px;
+$iconSizeB5: 30px;
+$iconSizeB6: 30px;
 
 .ContactSection {
-  /* Display & Box Model */
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 30vh;
-  // padding: 100px 0;
+  height: $navBarHeight;
 
-  /* Other */
-  background-color: var(--color-primary);
+  background-color: var(--color-tertiary);
 
   .Contact {
-    /* Display & Box Model */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // max-width: 400px;
 
-    h3 {
-      /* Other */
+    h4 {
       color: white;
       line-height: 150%;
       text-align: center;
@@ -41,11 +35,10 @@ $iconSizeB6: 48px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      max-width: 56%;
+      max-width: 15%;
 
       .ContactLink {
         img {
-          /* Display & Box Model */
           width: $iconSizeMobile;
           height: $iconSizeMobile;
           &:hover {
@@ -60,18 +53,15 @@ $iconSizeB6: 48px;
 @media (min-width: $screenWidthB1) {
   .ContactSection {
     .Contact {
-      /* Display & Box Model */
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       
-      h3 {
-        /* Other */
+      h4 {
         text-align: left;
       }
       .ContactLinks {
-        /* Display & Box Model */
-        max-width: 40%;
+        max-width: 15%;
 
         .ContactLink {
           img {
@@ -122,7 +112,7 @@ $iconSizeB6: 48px;
     .Contact {
       .ContactLinks {
         /* Display & Box Model */
-        max-width: 40%;
+        max-width: 15%;
 
         .ContactLink {
           img {
