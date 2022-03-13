@@ -6,12 +6,13 @@
   margin-bottom: 40px;
   border-radius: 20px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   row-gap: 20px;
   justify-items: center;
   transition: all 0.3s ease-out;
-  padding: 20px;
+  padding: 40px;
   border: 2px solid rgba(100, 100, 100, 0.1);
+  background-color: #637fcd11;
 
   .ProjectImage {
     height: 340px;
@@ -21,7 +22,7 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: scale-down;
+        object-fit: cover;
         border-radius: 20px;
       }
     }
@@ -30,7 +31,6 @@
   .ProjectDescription {
     width: 90%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
