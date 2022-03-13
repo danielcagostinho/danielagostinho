@@ -14,6 +14,8 @@ import weather from "./assets/projects/weather.jpg";
 import dankimfilms from "./assets/projects/dankimfilms.png";
 import todo from "./assets/projects/todo.png";
 import trigo from "./assets/projects/trigo.jpg";
+import maison from "./assets/projects/maison.webp";
+import jiphy from "./assets/projects/jiphy.png";
 import intact from "./assets/employers/intact.png";
 import mcmaster from "./assets/employers/mcmaster.jpg";
 
@@ -27,6 +29,31 @@ class App extends Component {
     isTitleDisplayed: true,
     scrollPosition: 0,
     projects: [
+      {
+        name: "Maison",
+        description:
+          "Housemate payment splitting made simple.",
+        imgSrc: maison,
+        tech: [
+          { name: "React Native", color: "#6380CD" },
+          { name: "MongoDB", color: "#00684A" },
+          { name: "Node.js", color: "#8CC84B" },
+        ],
+        github: "https://github.com/danielcagostinho/Maison",
+      },
+      {
+        name: "Jiphy",
+        description:
+          "Gif Scrolling Website (Giphy Clone)",
+        imgSrc: jiphy,
+        tech: [
+          { name: "React Native", color: "#6380CD" },
+          { name: "SASS", color: "#CD679A" },
+          { name: "Node.js", color: "#8CC84B" },
+        ],
+        github: "https://github.com/danielcagostinho/jiphy/",
+        url: "https://danielcagostinho.github.io/jiphy/"
+      },
       {
         name: "Trigo Bakery",
         description:
