@@ -75,13 +75,57 @@
 
 @media (min-width: $screenWidthB1) {
   .Project {
+    .ProjectDescription {
+      h4 {
+        margin-bottom: 16px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      .pills {
+        margin-right: -8px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .ProjectLinks {
+      img {
+        width: 24px;
+        height: 24px;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.4);
+          cursor: pointer;
+        }
+      }
+    }
+
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.005) !important;
+      box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+  }
+}
+
+@media (min-width: $screenWidthB2) {
+  .Project {
     /* Display & Box Model */
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;      
 
     .ProjectDescription {
+      grid-column-start: 1;
+      grid-row-start: 1;
       /* Display & Box Model */
       justify-content: flex-start;
       align-items: flex-start;
@@ -129,17 +173,12 @@
 
     &:hover {
       transform: scale(1.005) !important;
-      box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
-        0 0 0 1px rgba(10, 10, 10, 0.02);
+      box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
       transform: translateZ(0);
       backface-visibility: hidden;
     }
   }
-}
-
-@media (min-width: $screenWidthB2) {
   .Project {
-
     .ProjectDescription {
       h4 {
         /* Display & Box Model */
@@ -171,7 +210,6 @@
 
 @media (min-width: $screenWidthB3) {
   .Project {
-
     .ProjectDescription {
       h4 {
         /* Display & Box Model */
@@ -203,7 +241,6 @@
 
 @media (min-width: $screenWidthB4) {
   .Project {
-
     .ProjectDescription {
       h4 {
         margin-bottom: 24px;
@@ -247,7 +284,6 @@
         /* Display & Box Model */
         // width: 80%;
         margin-bottom: 28px;
-
       }
 
       .pills {
@@ -269,7 +305,6 @@
 
 @media (min-width: $screenWidthB6) {
   .Project {
-
     .ProjectDescription {
       h4 {
         /* Display & Box Model */
