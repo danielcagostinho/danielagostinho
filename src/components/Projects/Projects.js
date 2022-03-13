@@ -10,7 +10,7 @@ const Projects = ({ projects, onEnter }) => {
 
   projectsDisplay = projects.map((project, idx) => {
     return (
-      <Project key={project.name} project={project} flipped={idx % 2 === 1} />
+      <Project key={project.name} project={project} flipped={true} />
     );
   });
 

@@ -87,11 +87,7 @@ const Project = ({ project, flipped }) => {
       className="Project"
       style={styleVariants[variant].project}
     >
-      <div className="ProjectImage">
-        <a href={project.url} target="_blank" rel="noreferrer">
-          <img src={project.imgSrc} alt="Project Thumbnail" />
-        </a>
-      </div>
+
       <div className="ProjectDescription">
         <h4>{project.name}</h4>
         <p>{project.description}</p>
@@ -105,13 +101,18 @@ const Project = ({ project, flipped }) => {
           })}
         </div>
         <div className="ProjectLinks">
-          <a href={project.github} target="_blank" rel="noreferrer">
+          {project.github && <a href={project.github} target="_blank" rel="noreferrer">
             <img src={githubIcon} alt="Go to page" />
-          </a>
-          <a href={project.url} target="_blank" rel="noreferrer">
+          </a>}
+          {project.url && <a href={project.url} target="_blank" rel="noreferrer">
             <img src={externalIcon} alt="Github icon" />
-          </a>
+          </a>}
         </div>
+      </div>
+      <div className="ProjectImage">
+        <a href={project.url} target="_blank" rel="noreferrer">
+          <img src={project.imgSrc} alt="Project Thumbnail" />
+        </a>
       </div>
     </motion.div>
   );
