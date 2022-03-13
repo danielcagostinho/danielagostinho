@@ -13,6 +13,7 @@
     padding: 0 !important;
     width: 100% !important;
     color: white;
+    font-size: var(--font-size-p2-mobile);
   }
 }
 
@@ -20,6 +21,9 @@
   .LanguagePill {
     margin-right: 8px;
     padding: 6px 8px 3px 8px;
+    p {
+      font-size: var(--font-size-p2-b1);
+    }
   }
 }
 
@@ -28,6 +32,9 @@
     margin-right: 8px;
     border-radius: 20px;
     padding: 6px 8px 3px 8px;
+    p {
+      font-size: var(--font-size-p2-b2);
+    }
   }
 }
 
@@ -36,6 +43,9 @@
     margin-right: 12px;
     border-radius: 20px;
     padding: 6px 12px 3px 12px;
+    p {
+      font-size: var(--font-size-p2-b3);
+    }
   }
 }
 
@@ -44,6 +54,9 @@
     margin-right: 12px;
     border-radius: 20px;
     padding: 6px 12px 3px 12px;
+    p {
+      font-size: var(--font-size-p2-b4);
+    }
   }
 }
 
@@ -52,6 +65,9 @@
     margin-right: 16px;
     border-radius: 20px;
     padding: 6px 16px 3px 16px;
+    p {
+      font-size: var(--font-size-p2-b5);
+    }
   }
 }
 
@@ -60,5 +76,8 @@
     margin-right: 16px;
     padding: 6px 20px 3px 20px;
     border-radius: 40px;
+    p {
+      font-size: var(--font-size-p2-b6);
+    }
   }
 }
