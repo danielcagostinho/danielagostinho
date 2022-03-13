@@ -1,4 +1,3 @@
-/* Avatar Size Variables */
 $avatarSizeMobile: 160px;
 $avatarSizeB1: 180px;
 $avatarSizeB2: 200px;
@@ -10,7 +9,6 @@ $avatarSizeB6: 360px;
 @mixin set-avatar-size($avatar-size) {
   .header-section {
     .avatar-container {
-      /* Display & Box Model */
       width: $avatar-size;
       height: $avatar-size;
     }
@@ -18,7 +16,6 @@ $avatarSizeB6: 360px;
 }
 
 .about-section {
-  /* Display & Box Model */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -26,10 +23,7 @@ $avatarSizeB6: 360px;
   height: 40vh;
   padding-top: 90px;
 
-  // @include AboutLayout;
-
   .header-section {
-    /* Display & Box Model */
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -37,12 +31,10 @@ $avatarSizeB6: 360px;
     width: 100%;
 
     .avatar-container {
-      /* Display & Box Model */
       width: $avatarSizeMobile;
       height: $avatarSizeMobile;
 
       img {
-        /* Display & Box Model */
         width: 100%;
         height: 100%;
         border-radius: 50%;
@@ -50,13 +42,11 @@ $avatarSizeB6: 360px;
     }
 
     .header-title {
-      /* Display & Box Model */
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-top: 40px;
 
-      /* Other */
       text-align: center;
     }
   }
@@ -64,7 +54,6 @@ $avatarSizeB6: 360px;
 
 @media (min-width: 681px) {
   .about-section {
-    /* Display & Box Model */
     justify-content: center;
     height: 50vh;
     padding-top: 100px;
@@ -73,19 +62,16 @@ $avatarSizeB6: 360px;
       /* Positioning */
       position: relative;
 
-      /* Display & Box Model */
       flex-direction: row;
       width: 100%;
       height: 40vh;
 
       .avatar-container {
-        /* Display & Box Model */
         width: $avatarSizeB1;
         height: $avatarSizeB1;
       }
 
       .header-title {
-        /* Display & Box Model */
         margin-top: 20px;
         text-align: left;
         
