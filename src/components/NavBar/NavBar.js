@@ -16,8 +16,10 @@ const NavBar = ({ showName }) => {
     },
   };
 
+  const navWrapperStyles = !showName ? "NavWrapper" : "NavWrapper NavWrapper--shadow"
+
   return (
-    <div className="NavWrapper">
+    <div className={navWrapperStyles}>
       <div className="NavBar content">
         <div className="NameHeader">
           <AnimatePresence>

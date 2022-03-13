@@ -22,6 +22,11 @@ $navLinkFontSizeB6: 24px;
 
   /* Other */
   background-color: white;
+  
+  &--shadow {
+    box-shadow: 1px 1px 4px rgb(190, 190, 190);
+    transition: box-shadow 100ms ease-in;
+  }
 
   .NavBar {
     /* Display & Box Model */
