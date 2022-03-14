@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { isMobile } from "react-device-detect";
 
 import NavBar from "./components/NavBar/NavBar";
 import MobileNavBar from "./components/MobileNavBar/MobileNavBar";
@@ -152,7 +151,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {isMobile ? (
+        {window.innerWidth < 800 ? (
           <MobileNavBar />
         ) : (
           <NavBar showName={this.state.isNameDisplayed} />

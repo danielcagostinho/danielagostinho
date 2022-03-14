@@ -9,14 +9,12 @@
   // height: 100;
   background-color: inherit;
 
-  box-shadow: 1px 1px 4px rgb(190, 190, 190);
-  transition: box-shadow 100ms ease-in;
-
   .mobile-nav-bar {
     height: 90px;
     width: 100%;
     background-color: white;
     // border: 1px solid red;
+    box-shadow: 1px 1px 4px rgb(190, 190, 190);
     position: fixed;
   }
 
