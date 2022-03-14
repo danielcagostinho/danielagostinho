@@ -88,7 +88,7 @@ const Project = ({ project, flipped }) => {
       style={styleVariants[variant].project}
     >
       <div className="ProjectImage">
-        <a href={project.url} target="_blank" rel="noreferrer">
+        <a href={project.url ? project.url : project.github} target="_blank" rel="noreferrer">
           <img src={project.imgSrc} alt="Project Thumbnail" />
         </a>
       </div>
