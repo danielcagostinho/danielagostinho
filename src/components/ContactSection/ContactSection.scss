@@ -1,7 +1,7 @@
 @import "../../design-tokens/scss-variables";
 
-$iconSizeMobile: 16px;
-$iconSizeB1: 20px;
+$iconSizeMobile: 24px;
+$iconSizeB1: 24px;
 $iconSizeB2: 24px;
 $iconSizeB3: 30px;
 $iconSizeB4: 30px;
@@ -35,7 +35,7 @@ $iconSizeB6: 30px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      max-width: 25%;
+      max-width: 40%;
 
       .ContactLink {
         img {
@@ -61,7 +61,7 @@ $iconSizeB6: 30px;
         text-align: left;
       }
       .ContactLinks {
-        max-width: 25%;
+        max-width: 30%;
 
         .ContactLink {
           img {
