@@ -43,7 +43,7 @@ class App extends Component {
       {
         name: "Jiphy",
         description:
-          "Gif Scrolling Website (Giphy Clone)",
+          "My take on a infinite scroll gif gallery.",
         imgSrc: jiphy,
         tech: [
           { name: "React", color: "#6380CD" },
