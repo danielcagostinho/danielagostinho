@@ -47,7 +47,7 @@ class App extends Component {
           "Gif Scrolling Website (Giphy Clone)",
         imgSrc: jiphy,
         tech: [
-          { name: "React Native", color: "#6380CD" },
+          { name: "React", color: "#6380CD" },
           { name: "SASS", color: "#CD679A" },
           { name: "Node.js", color: "#8CC84B" },
         ],
