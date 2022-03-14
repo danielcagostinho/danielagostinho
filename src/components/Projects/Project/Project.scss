@@ -69,6 +69,14 @@
 
 @media (min-width: $screenWidthB1) {
   .Project {
+  .ProjectImage {
+    filter: grayscale(100);
+  }
+
+  .ProjectImage:hover {
+    filter: grayscale(0);
+    transition: all 300ms ease-in-out;
+  }
     .ProjectDescription {
       h4 {
         margin-bottom: 16px;
