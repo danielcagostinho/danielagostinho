@@ -136,14 +136,18 @@ $floatAnimationDuration: 3s;
     color: white;
 
     .Column {
+      /* Display & Box Model */
       display: flex;
       flex-direction: column;
+      // height: 100%;
 
       .Title {
-        margin-bottom: 20px;
+        /* Display & Box Model */
+        margin-bottom: 8px;
 
         /* Other */
         color: white;
+        text-align: center;
         text-align: left;
       }
 
@@ -162,7 +166,7 @@ $floatAnimationDuration: 3s;
         width: $widthBubbleMobile;
         height: $widthBubbleMobile;
         border-radius: 50%;
-        margin-bottom: 80px;
+
         /* Other */
         animation: float $floatAnimationDuration ease-in-out infinite;
 
@@ -331,7 +335,7 @@ $floatAnimationDuration: 3s;
 @media (min-width: $screenWidthB1) {
   .SkillsSection {
     /* Display & Box Model */
-    height: 50vh;
+    height: 700px;
 
     .Container {
       /* Display & Box Model */
@@ -346,9 +350,18 @@ $floatAnimationDuration: 3s;
         flex-direction: column;
         align-items: center;
 
-        .Title {
-          /* Display & Box Model */
-          margin: 0;
+        .Bio {
+          align-self: flex-start;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          width: 70%;
+          padding-top: 120px;
+
+          .BioSkillsContainer {
+            grid-template-columns: 1fr 1fr;
+          }
         }
 
         .MainImageContainer {

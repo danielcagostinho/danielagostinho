@@ -25,24 +25,27 @@ const SkillsSection = () => {
     <div className="SkillsSection" id="skills">
       <div className="Container content">
         <div className="Column">
-          <h3 className="Title">My Skills</h3>
-          <p className="Description">
-            <span>
-              {window.innerWidth < 600 ? "Below " : "To the right "}
-            </span>
-            are skills that I've picked up through my development journey. Although I use C#, Angular and SQL in my every day work, I prefer to code in React.js! Here is a more extensive list of my skills:
-          </p>
-          <div className="BioSkillsContainer">
-            <p>React.js</p>
-            <p>Angular</p>
-            <p>C#</p>
-            <p>Node.js</p>
-            <p>Redux</p>
-            <p>HTML5</p>
-            <p>CSS5</p>
-            <p>SASS</p>
-            <p>Figma</p>
-            <p>PostgreSQL</p>
+          <div className="Bio">
+
+            <h3 className="Title">My Skills</h3>
+            <p className="Description">
+              <span>
+                {window.innerWidth < 600 ? "Below " : "To the right "}
+              </span>
+              are skills that I've picked up through my development journey. Although I use C#, Angular and SQL in my every day work, I prefer to code in React.js! Here is a more extensive list of my skills:
+            </p>
+            <div className="BioSkillsContainer">
+              <p>React.js</p>
+              <p>Angular</p>
+              <p>C#</p>
+              <p>Node.js</p>
+              <p>Redux</p>
+              <p>HTML5</p>
+              <p>CSS5</p>
+              <p>SASS</p>
+              <p>Figma</p>
+              <p>PostgreSQL</p>
+            </div>
           </div>
         </div>
         <motion.div
