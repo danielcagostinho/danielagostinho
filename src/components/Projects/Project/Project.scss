@@ -36,18 +36,18 @@
     text-align: center;
 
     h4 {
-      margin-bottom: 16px;
+      margin-bottom: $titlePaddingBottomMobile;
     }
 
     p {
-      margin-bottom: 16px;
+      margin-bottom: $titlePaddingBottomMobile;
     }
 
     .pills {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-bottom: 16px;
+      margin-bottom: $titlePaddingBottomMobile;
     }
   }
 
@@ -79,16 +79,16 @@
   }
     .ProjectDescription {
       h4 {
-        margin-bottom: 16px;
+        margin-bottom: $titlePaddingBottomMobile;
       }
 
       p {
-        margin-bottom: 16px;
+        margin-bottom: $titlePaddingBottomMobile;
       }
 
       .pills {
         margin-right: -8px;
-        margin-bottom: 16px;
+        margin-bottom: $titlePaddingBottomMobile;
       }
     }
 
@@ -136,16 +136,16 @@
       text-align: left;
 
       h4 {
-        margin-bottom: 16px;
+        margin-bottom: $titlePaddingBottomMobile;
       }
 
       p {
-        margin-bottom: 16px;
+        margin-bottom: $titlePaddingBottomMobile;
       }
 
       .pills {
         margin-right: -8px;
-        margin-bottom: 16px;
+        margin-bottom: $titlePaddingBottomMobile;
       }
     }
 
@@ -177,16 +177,16 @@
   .Project {
     .ProjectDescription {
       h4 {
-        margin-bottom: 20px;
+        margin-bottom: $titlePaddingBottomB2;
       }
 
       p {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: $titlePaddingBottomB2;
       }
 
       .pills {
-        margin-bottom: 20px;
+        margin-bottom: $titlePaddingBottomB2;
         margin-right: 16px;
       }
     }
@@ -204,16 +204,16 @@
   .Project {
     .ProjectDescription {
       h4 {
-        margin-bottom: 20px;
+        margin-bottom: $titlePaddingBottomB2;
       }
 
       p {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: $titlePaddingBottomB2;
       }
 
       .pills {
-        margin-bottom: 20px;
+        margin-bottom: $titlePaddingBottomB2;
         margin-right: 16px;
       }
     }
@@ -231,17 +231,17 @@
   .Project {
     .ProjectDescription {
       h4 {
-        margin-bottom: 24px;
+        margin-bottom: $titlePaddingBottomB4;
       }
 
       p {
         width: 80%;
-        margin-bottom: 24px;
+        margin-bottom: $titlePaddingBottomB4;
       }
 
       .pills {
         margin-right: 16px;
-        margin-bottom: 24px;
+        margin-bottom: $titlePaddingBottomB4;
       }
     }
 
@@ -260,15 +260,15 @@
 
     .ProjectDescription {
       h4 {
-        margin-bottom: 28px;
+        margin-bottom: $titlePaddingBottomB4;
       }
 
       p {
-        margin-bottom: 28px;
+        margin-bottom: $titlePaddingBottomB4;
       }
 
       .pills {
-        margin-bottom: 28px;
+        margin-bottom: $titlePaddingBottomB4;
         margin-right: 16px;
       }
     }
@@ -286,15 +286,15 @@
   .Project {
     .ProjectDescription {
       h4 {
-        margin-bottom: 24px;
+        margin-bottom: $titlePaddingBottomB4;
       }
 
       p {
-        margin-bottom: 24px;
+        margin-bottom: $titlePaddingBottomB4;
       }
 
       .pills {
-        margin-bottom: 24px;
+        margin-bottom: $titlePaddingBottomB4;
       }
     }
 

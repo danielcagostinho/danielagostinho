@@ -18,6 +18,10 @@ $contentMaxWidthB4: 70%;
 $contentMaxWidthB5: 65%;
 $contentMaxWidthB6: 50%;
 
+$titlePaddingBottomMobile: 16px;
+$titlePaddingBottomB2: 20px;
+$titlePaddingBottomB4: 24px;
+
 @mixin global-fonts(
   $font-size-h1,
   $font-size-h2,
