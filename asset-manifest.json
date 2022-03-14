@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54a19ee0.chunk.css",
+    "main.js": "/static/js/main.b0f993b2.chunk.js",
+    "main.js.map": "/static/js/main.b0f993b2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f07029bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f07029bc.js.map",
+    "static/js/2.67ca6774.chunk.js": "/static/js/2.67ca6774.chunk.js",
+    "static/js/2.67ca6774.chunk.js.map": "/static/js/2.67ca6774.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.54a19ee0.chunk.css.map": "/static/css/main.54a19ee0.chunk.css.map",
+    "static/js/2.67ca6774.chunk.js.LICENSE.txt": "/static/js/2.67ca6774.chunk.js.LICENSE.txt",
+    "static/media/CSS3Icon.4b623ed2.svg": "/static/media/CSS3Icon.4b623ed2.svg",
+    "static/media/index.scss": "/static/media/Mukta-Regular.b8d37293.ttf",
+    "static/media/ExternalIcon.beafb97e.svg": "/static/media/ExternalIcon.beafb97e.svg",
+    "static/media/GithubIcon.6ad9299f.svg": "/static/media/GithubIcon.6ad9299f.svg",
+    "static/media/HTML5Icon.22f47f82.svg": "/static/media/HTML5Icon.22f47f82.svg",
+    "static/media/MailIcon.da84970f.svg": "/static/media/MailIcon.da84970f.svg",
+    "static/media/ReactIcon.7e6b05bf.svg": "/static/media/ReactIcon.7e6b05bf.svg",
+    "static/media/ReduxIcon.18a7e18a.svg": "/static/media/ReduxIcon.18a7e18a.svg",
+    "static/media/SassIcon.eb7dbb61.svg": "/static/media/SassIcon.eb7dbb61.svg",
+    "static/media/TwitterIcon.23e6bb64.svg": "/static/media/TwitterIcon.23e6bb64.svg",
+    "static/media/avatar.6a3d0bde.jpg": "/static/media/avatar.6a3d0bde.jpg",
+    "static/media/dankimfilms.3ae33392.png": "/static/media/dankimfilms.3ae33392.png",
+    "static/media/header-image.c5dd336e.svg": "/static/media/header-image.c5dd336e.svg",
+    "static/media/jiphy.35e05922.png": "/static/media/jiphy.35e05922.png",
+    "static/media/maison.9effd5b5.webp": "/static/media/maison.9effd5b5.webp",
+    "static/media/mcmaster.fcb460c8.jpg": "/static/media/mcmaster.fcb460c8.jpg",
+    "static/media/todo.d3ed7ea0.png": "/static/media/todo.d3ed7ea0.png",
+    "static/media/trigo.41d48f42.jpg": "/static/media/trigo.41d48f42.jpg",
+    "static/media/weather.f163a7ac.jpg": "/static/media/weather.f163a7ac.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f07029bc.js",
+    "static/js/2.67ca6774.chunk.js",
+    "static/css/main.54a19ee0.chunk.css",
+    "static/js/main.b0f993b2.chunk.js"
+  ]
+}
