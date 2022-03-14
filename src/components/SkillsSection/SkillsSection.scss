@@ -120,7 +120,7 @@ $floatAnimationDuration: 3s;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 700px;
 
   /* Other */
   background-color: var(--color-primary);
@@ -132,21 +132,29 @@ $floatAnimationDuration: 3s;
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    height: 40vh;
+    height: 600px;
+    color: white;
 
     .Column {
-      /* Display & Box Model */
       display: flex;
       flex-direction: column;
-      // height: 100%;
 
       .Title {
-        /* Display & Box Model */
-        margin-bottom: 8px;
+        margin-bottom: 20px;
 
         /* Other */
         color: white;
-        text-align: center;
+        text-align: left;
+      }
+
+      .Description {
+        margin-bottom: 20px;
+      }
+      
+      .BioSkillsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 100px;
       }
 
       .MainImageContainer {
@@ -154,7 +162,7 @@ $floatAnimationDuration: 3s;
         width: $widthBubbleMobile;
         height: $widthBubbleMobile;
         border-radius: 50%;
-
+        margin-bottom: 80px;
         /* Other */
         animation: float $floatAnimationDuration ease-in-out infinite;
 
