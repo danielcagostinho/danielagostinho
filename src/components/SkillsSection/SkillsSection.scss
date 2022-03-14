@@ -166,6 +166,7 @@ $floatAnimationDuration: 3s;
         width: $widthBubbleMobile;
         height: $widthBubbleMobile;
         border-radius: 50%;
+        margin-bottom: 60px;
 
         /* Other */
         animation: float $floatAnimationDuration ease-in-out infinite;
@@ -368,6 +369,8 @@ $floatAnimationDuration: 3s;
           width: $widthBubbleMedium;
           height: $widthBubbleMedium;
           margin-right: $widthBubbleMedium;
+          margin-bottom: 0;
+
         }
 
         .SmallImageContainer {
