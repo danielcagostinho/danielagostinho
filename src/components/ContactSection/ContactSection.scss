@@ -61,7 +61,7 @@ $iconSizeB6: 30px;
         text-align: left;
       }
       .ContactLinks {
-        max-width: 15%;
+        max-width: 25%;
 
         .ContactLink {
           img {
@@ -97,7 +97,6 @@ $iconSizeB6: 30px;
       .ContactLinks {
         .ContactLink {
           img {
-            /* Display & Box Model */
             width: $iconSizeB3;
             height: $iconSizeB3;
           }
@@ -111,12 +110,10 @@ $iconSizeB6: 30px;
   .ContactSection {
     .Contact {
       .ContactLinks {
-        /* Display & Box Model */
-        max-width: 15%;
+        max-width: 25%;
 
         .ContactLink {
           img {
-            /* Display & Box Model */
             width: $iconSizeB4;
             height: $iconSizeB4;
           }
@@ -132,7 +129,6 @@ $iconSizeB6: 30px;
       .ContactLinks {
         .ContactLink {
           img {
-            /* Display & Box Model */
             width: $iconSizeB5;
             height: $iconSizeB5;
           }
@@ -148,7 +144,6 @@ $iconSizeB6: 30px;
       .ContactLinks {
         .ContactLink {
           img {
-            /* Display & Box Model */
             width: $iconSizeB6;
             height: $iconSizeB6;
           }
