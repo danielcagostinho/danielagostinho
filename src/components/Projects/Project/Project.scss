@@ -15,9 +15,8 @@
   background-color: #637fcd11;
 
   .ProjectImage {
-    height: 340px;
+    height: 200px;
     width: 100%;
-    object-fit: cover;
     a {
       img {
         width: 100%;
@@ -122,7 +121,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     margin-bottom: 40px;      
-
+    .ProjectImage {
+      height: 340px;
+    }
     .ProjectDescription {
       grid-column-start: 1;
       grid-row-start: 1;
