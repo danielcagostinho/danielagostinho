@@ -26,7 +26,6 @@ const SkillsSection = () => {
       <div className="Container content">
         <div className="Column">
           <div className="Bio">
-
             <h3 className="Title">My Skills</h3>
             <p className="Description">
               <span>
