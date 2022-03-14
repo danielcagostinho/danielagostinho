@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "echo 'danielagostinho.com' > ./build/CNAME && gh-pages -d build -b master",
+    "deploy": "echo danielagostinho.com > ./build/CNAME git add&& gh-pages -d build -b master",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
