@@ -65,7 +65,7 @@ class App extends Component {
           { name: "Node.js", color: "#8CC84B" },
         ],
         github: "https://github.com/danielcagostinho/TrigoBakery",
-        url: "https://danielcagostinho.github.io/TrigoBakery/#/TrigoBakery/",
+        url: "https://danielcagostinho.github.io/TrigoBakery/#/",
       },
       {
         name: "Dan Kim Films",
