@@ -1,9 +1,9 @@
-export interface Tech {
+export type Tech = {
   name: string;
   color: string;
 }
 
-export interface Project {
+export type Project = {
   name: string;
   description: string;
   imgSrc: string;
@@ -12,7 +12,7 @@ export interface Project {
   url?: string;
 }
 
-export interface Employer {
+export type Employer = {
   name: string;
   img: {
     src: string;
@@ -21,4 +21,32 @@ export interface Employer {
   position: string;
   description: string;
   timeLength: string;
+}
+
+export type Experience = {
+  company: string;
+  position: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  bullets: string[];
+  technologies: string[];
+}
+
+export type Education = {
+  degree: string;
+  institution: string;
+  startYear: number;
+  endYear: number;
+}
+
+export type Hackathon = {
+  name: string;
+  institution: string;
+  date: string;
+}
+
+export type SkillCategory = {
+  category: string;
+  skills: string[];
 }

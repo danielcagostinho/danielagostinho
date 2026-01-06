@@ -1,4 +1,96 @@
-import { Project, Employer } from '@/types';
+import { Project, Employer, Experience, Education, Hackathon, SkillCategory } from '@/types';
+
+export const experience: Experience[] = [
+  {
+    company: "GEOTAB",
+    position: "Software Developer",
+    location: "Oakville, Canada",
+    startDate: "Apr 2021",
+    endDate: "Present",
+    bullets: [
+      "Worked closely with UX designers and product owners to implement large public-facing features in Angular while following Figma mockups",
+      "Implemented a component schematic CLI tool to reduce time to bootstrap new components by pre configuring templated HTML, and setting up required routes and services",
+      "Fixed massive performance problems reducing minutes down to seconds by optimizing SQL queries",
+      "Experience with on-call, manual deployments, triaging server performance issues, and investigating server downtimes using memory dumps and PerfViews",
+      "Hosted design discussions regarding new technologies, bad code practices within the application and used the opportunity to improve overall knowledge of the department",
+      "Mentored and spent time teaching and helping new developers"
+    ],
+    technologies: ["C#", ".NET Core", "Angular", "RxJS", "TypeScript", "PowerShell", "Bash", "Docker"]
+  },
+  {
+    company: "Intact Financial Corporation",
+    position: "Test Automation Developer I",
+    location: "Toronto, Canada",
+    startDate: "Oct 2019",
+    endDate: "Mar 2021",
+    bullets: [
+      "Worked with development team and QA analysts to create automated test scripts and suites to identify, diagnose and report potentially disastrous system errors for a large-scale insurance application",
+      "Used React.js to develop a reporting dashboard to provide management with a consolidated view of performance and regression results, increasing the visibility of defects, reducing the time required to fix them, resulting in faster feature development",
+      "Was solely responsible for the execution and maintenance of the regression suite for Intact's legacy application",
+      "Mentored newly-hired automation developer, identifying opportunities for growth and actively taught skills that would enable them to effectively contribute to rapidly growing test automation framework"
+    ],
+    technologies: ["React.js", "Selenium", "Jest"]
+  },
+  {
+    company: "McMaster University Technology Services",
+    position: "Data Warehouse Developer / Analyst",
+    location: "Toronto, Canada",
+    startDate: "May 2017",
+    endDate: "May 2018",
+    bullets: [
+      "Designed and implemented data extraction and transformation processes to support a large-scale university application",
+      "Developed web-tools to enhance the student experience (currently used by over 30,000 users)",
+      "Generated reports and queries in response to business requirements"
+    ],
+    technologies: ["React.js", "Google Cloud Platform API", "SQL", "Java", "PeopleCode", "HTML5", "CSS3"]
+  }
+];
+
+export const education: Education[] = [
+  {
+    degree: "Bachelor of Engineering (Co-op) | Software",
+    institution: "McMaster University",
+    startYear: 2014,
+    endYear: 2019
+  }
+];
+
+export const hackathons: Hackathon[] = [
+  {
+    name: "YHacks",
+    institution: "Yale University",
+    date: "Nov 2018"
+  },
+  {
+    name: "Hack the 6ix",
+    institution: "University of Toronto",
+    date: "Aug 2019"
+  },
+  {
+    name: "DeltaHacks",
+    institution: "McMaster University",
+    date: "Jan 2018"
+  }
+];
+
+export const skillCategories: SkillCategory[] = [
+  {
+    category: "Front End",
+    skills: ["Angular 12", "React.js", "React Native", "Javascript (ES6)", "Sass (CSS3)", "HTML5", "Android SDK"]
+  },
+  {
+    category: "Back End",
+    skills: ["PostgreSQL", "C#", "Node.js", "Python", "Java"]
+  },
+  {
+    category: "Testing",
+    skills: ["Jest", "Selenium", "Cypress"]
+  },
+  {
+    category: "Other",
+    skills: ["Git", "SVN", "Jenkins", "Bash"]
+  }
+];
 
 export const projects: Project[] = [
   {
