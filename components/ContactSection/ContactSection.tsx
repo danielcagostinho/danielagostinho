@@ -24,9 +24,11 @@ const ContactSection = () => {
   return (
     <div className="bg-tertiary flex justify-center items-center w-full h-[100px]" id="contact">
       <div className="max-w-6xl w-full px-4 flex flex-row justify-between items-center">
-        <h4 className="text-white font-bold text-lg md:text-xl lg:text-2xl tracking-tight leading-[150%]">Get in touch!</h4>
+        <h4 className="text-white font-bold text-lg md:text-xl lg:text-2xl tracking-tight leading-[150%]">
+          Get in touch!
+        </h4>
         <div className="flex flex-row justify-between gap-5 mx-5 w-full max-w-[40%] md:max-w-[30%] lg:max-w-[25%]">
-          {contactLinks.map((contactLink) => (
+          {contactLinks.map(contactLink => (
             <a
               key={contactLink.name}
               href={contactLink.url}

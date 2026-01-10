@@ -1,24 +1,7 @@
-export interface Tech {
-  name: string;
-  color: string;
-}
-
-export interface Project {
-  name: string;
-  description: string;
-  imgSrc: string;
-  tech: Tech[];
-  github: string;
-  url?: string;
-}
-
-export interface Employer {
-  name: string;
-  img: {
-    src: string;
-    altText: string;
-  };
-  position: string;
-  description: string;
-  timeLength: string;
-}
+export type { Tech } from './Tech';
+export type { Project } from './Project';
+export type { Employer } from './Employer';
+export type { Experience } from './Experience';
+export type { Education } from './Education';
+export type { Hackathon } from './Hackathon';
+export type { SkillCategory } from './SkillCategory';
