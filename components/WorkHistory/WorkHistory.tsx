@@ -102,11 +102,7 @@ const WorkHistory = () => {
                   }`}
                 >
                   {/* Content */}
-                  <div
-                    className={`w-5/12 ${
-                      isLeft ? 'pr-12 text-right' : 'pl-12 text-left'
-                    }`}
-                  >
+                  <div className={`w-5/12 ${isLeft ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                       <div
                         className={`flex items-center gap-4 mb-4 ${
@@ -125,15 +121,13 @@ const WorkHistory = () => {
                           <h4 className="text-secondary font-bold text-lg md:text-xl lg:text-2xl tracking-tight">
                             {employer.position}
                           </h4>
-                          <p className="text-xs text-primary font-semibold">
-                            {employer.name}
-                          </p>
+                          <p className="text-xs text-primary font-semibold">{employer.name}</p>
                         </div>
                       </div>
-                      <p className="text-xs text-primary mb-3 font-medium">
-                        {employer.timeLength}
+                      <p className="text-xs text-primary mb-3 font-medium">{employer.timeLength}</p>
+                      <p className="text-tertiary font-light text-base md:text-lg leading-[140%]">
+                        {employer.description}
                       </p>
-                      <p className="text-tertiary font-light text-base md:text-lg leading-[140%]">{employer.description}</p>
                     </div>
                   </div>
 

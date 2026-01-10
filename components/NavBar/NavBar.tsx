@@ -2,7 +2,6 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 
 const NavBar = () => {
   const [showName, setShowName] = useState(false);
@@ -41,13 +40,15 @@ const NavBar = () => {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${showName ? 'shadow-md' : ''}`}>
+    <div
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${showName ? 'shadow-md' : ''}`}
+    >
       <nav className="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
         <div className="min-w-[200px]">
           <AnimatePresence>
@@ -75,7 +76,7 @@ const NavBar = () => {
           >
             <a
               href="#about"
-              onClick={(e) => scrollToSection(e, 'about')}
+              onClick={e => scrollToSection(e, 'about')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
             >
               About
@@ -91,7 +92,7 @@ const NavBar = () => {
           >
             <a
               href="#projects"
-              onClick={(e) => scrollToSection(e, 'projects')}
+              onClick={e => scrollToSection(e, 'projects')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
             >
               Projects
@@ -107,7 +108,7 @@ const NavBar = () => {
           >
             <a
               href="#skills"
-              onClick={(e) => scrollToSection(e, 'skills')}
+              onClick={e => scrollToSection(e, 'skills')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
             >
               Skills
@@ -123,7 +124,7 @@ const NavBar = () => {
           >
             <a
               href="#work-history"
-              onClick={(e) => scrollToSection(e, 'work-history')}
+              onClick={e => scrollToSection(e, 'work-history')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
             >
               Work
@@ -139,7 +140,7 @@ const NavBar = () => {
           >
             <a
               href="#contact"
-              onClick={(e) => scrollToSection(e, 'contact')}
+              onClick={e => scrollToSection(e, 'contact')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
             >
               Contact

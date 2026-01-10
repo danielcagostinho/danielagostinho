@@ -32,10 +32,7 @@ const AboutSection = () => {
         className="flex flex-col md:flex-row items-center justify-between gap-12"
         id="about"
       >
-        <motion.div
-          className="flex-1 text-center md:text-left"
-          variants={titleVariants}
-        >
+        <motion.div className="flex-1 text-center md:text-left" variants={titleVariants}>
           <h1 className="text-secondary font-bold text-[26px] sm:text-[32px] md:text-[36px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] mb-4">
             Daniel Agostinho
           </h1>

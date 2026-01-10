@@ -10,7 +10,7 @@ interface ProjectProps {
   index: number;
 }
 
-const Project = ({ project, index }: ProjectProps) => {
+const Project = ({ project, index: _index }: ProjectProps) => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -77,7 +77,9 @@ const Project = ({ project, index }: ProjectProps) => {
           <h4 className="text-secondary font-bold text-lg md:text-xl lg:text-2xl tracking-tight mb-4">
             {project.name}
           </h4>
-          <p className="text-tertiary font-light text-base md:text-lg leading-[140%] mb-4 md:w-4/5">{project.description}</p>
+          <p className="text-tertiary font-light text-base md:text-lg leading-[140%] mb-4 md:w-4/5">
+            {project.description}
+          </p>
 
           <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
             {project.tech.map((t, idx) => (

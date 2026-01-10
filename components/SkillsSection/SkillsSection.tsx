@@ -31,19 +31,20 @@ const SkillsSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-white font-bold text-xl md:text-2xl lg:text-3xl mb-6">
-              My Skills
-            </h3>
+            <h3 className="text-white font-bold text-xl md:text-2xl lg:text-3xl mb-6">My Skills</h3>
             <p className="text-white font-light text-base md:text-lg leading-[140%] mb-6">
               <span className="md:hidden">Below </span>
               <span className="hidden md:inline">To the right </span>
-              are skills that I've picked up through my development journey.
-              Although I use C#, Angular and SQL in my every day work, I prefer
-              to code in React.js! Here is a more extensive list of my skills:
+              are skills that I&apos;ve picked up through my development journey. Although I use C#,
+              Angular and SQL in my every day work, I prefer to code in React.js! Here is a more
+              extensive list of my skills:
             </p>
             <div className="grid grid-cols-2 gap-3">
-              {skills.map((skill) => (
-                <p key={skill} className="text-white font-light text-base md:text-lg leading-[140%]">
+              {skills.map(skill => (
+                <p
+                  key={skill}
+                  className="text-white font-light text-base md:text-lg leading-[140%]"
+                >
                   {skill}
                 </p>
               ))}
