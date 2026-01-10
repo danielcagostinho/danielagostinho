@@ -8,4 +8,5 @@ const resumeMarkdown = generateFullResume(experience, education, hackathons, ski
 const outputPath = path.join(process.cwd(), 'RESUME.md');
 fs.writeFileSync(outputPath, resumeMarkdown);
 
+// eslint-disable-next-line no-console
 console.log(`Resume generated at: ${outputPath}`);

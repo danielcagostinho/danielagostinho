@@ -1,4 +1,5 @@
 # Daniel Agostinho
+
 **Front End Web Developer**
 
 ---
@@ -6,8 +7,9 @@
 # Experience
 
 ## Senior Software Engineer
+
 **Wayfinder AI** | Toronto, Canada
-*Jan 2024 - Present*
+_Jan 2024 - Present_
 
 - Lead UI engineer for AI-powered crypto transaction platform, working with team of 2-3 frontend engineers
 - Architected and built ChatGPT-like interface enabling users to interact with AI agents for complex crypto operations including smart contract deployment, Hyperliquid trading, Polymarket trading, and automated trading strategies
@@ -19,8 +21,9 @@
 ---
 
 ## Senior Software Engineer
+
 **Parallel Studios** | Toronto, Canada
-*Jan 2022 - Dec 2024*
+_Jan 2022 - Dec 2024_
 
 - Developed UI for NFT pack drop platform using TypeScript and Next.js, facilitating seamless user experience for digital collectible purchases
 - Integrated Web3 technologies including ethers.js, wagmi, RainbowKit, and WalletConnect to enable secure blockchain transaction submissions
@@ -32,8 +35,9 @@
 ---
 
 ## Software Developer
+
 **GEOTAB** | Oakville, Canada
-*Apr 2021 - Jan 2022*
+_Apr 2021 - Jan 2022_
 
 - Worked closely with UX designers and product owners to implement large public-facing features in Angular while following Figma mockups
 - Implemented a component schematic CLI tool to reduce time to bootstrap new components by pre configuring templated HTML, and setting up required routes and services
@@ -47,8 +51,9 @@
 ---
 
 ## Test Automation Developer I
+
 **Intact Financial Corporation** | Toronto, Canada
-*Oct 2019 - Mar 2021*
+_Oct 2019 - Mar 2021_
 
 - Worked with development team and QA analysts to create automated test scripts and suites to identify, diagnose and report potentially disastrous system errors for a large-scale insurance application
 - Used React.js to develop a reporting dashboard to provide management with a consolidated view of performance and regression results, increasing the visibility of defects, reducing the time required to fix them, resulting in faster feature development
@@ -60,8 +65,9 @@
 ---
 
 ## Data Warehouse Developer / Analyst
+
 **McMaster University Technology Services** | Toronto, Canada
-*May 2017 - May 2018*
+_May 2017 - May 2018_
 
 - Designed and implemented data extraction and transformation processes to support a large-scale university application
 - Developed web-tools to enhance the student experience (currently used by over 30,000 users)
@@ -74,20 +80,24 @@
 # Education
 
 ## Bachelor of Engineering (Co-op) | Software
+
 **McMaster University**
-*2014 - 2019*
+_2014 - 2019_
 
 ---
 
 # Hackathons
 
 ### YHacks
+
 **Yale University** | Nov 2018
 
 ### Hack the 6ix
+
 **University of Toronto** | Aug 2019
 
 ### DeltaHacks
+
 **McMaster University** | Jan 2018
 
 ---
@@ -95,16 +105,21 @@
 # Skills
 
 ### Front End
+
 React.js • Next.js • TypeScript • Tailwind CSS • Angular 12 • React Native • Radix UI • Framer Motion • Javascript (ES6) • Sass (CSS3) • HTML5
 
 ### Back End
+
 Node.js • Python • Django • PostgreSQL • C# • Java
 
 ### Web3 & Blockchain
+
 ethers.js • wagmi • RainbowKit • WalletConnect • Smart Contracts
 
 ### Testing
+
 Jest • Selenium • Cypress
 
 ### Other
+
 Git • WebSocket • Stripe • Docker • Jenkins • Bash • PowerShell
