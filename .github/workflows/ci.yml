@@ -4,15 +4,20 @@ on:
   pull_request:
     branches:
       - development
+      - main
+  push:
+    branches:
+      - development
 
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -24,11 +29,11 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Check formatting
+      - name: Check formatting with Prettier
         run: npm run format:check
 
-      - name: Type check
+      - name: TypeScript type check
         run: npm run typecheck
 
-      - name: Build
+      - name: Build project
         run: npm run build
