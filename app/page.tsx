@@ -10,9 +10,9 @@ export default function Home() {
     <main className="min-h-screen">
       <NavBar />
       <AboutSection />
+      <WorkHistory />
       <Projects />
       <SkillsSection />
-      <WorkHistory />
       <ContactSection />
     </main>
   );

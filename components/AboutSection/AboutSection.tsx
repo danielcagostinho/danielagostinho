@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { DownArrowIcon } from '@/components/svgs';
 
 const AboutSection = () => {
   const titleVariants = {
@@ -19,9 +20,20 @@ const AboutSection = () => {
     },
   };
 
+  const scrollIndicatorVariants = {
+    animate: {
+      y: [0, 10, 0],
+      transition: {
+        duration: 1.5,
+        repeat: Infinity,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
   return (
     <motion.div
-      className="max-w-6xl mx-auto px-4 py-20"
+      className="min-h-screen flex flex-col items-center justify-center relative px-4"
       variants={titleVariants}
       initial="hidden"
       animate="visible"
@@ -29,7 +41,7 @@ const AboutSection = () => {
       transition={{ staggerChildren: 2 }}
     >
       <motion.div
-        className="flex flex-col md:flex-row items-center justify-between gap-12"
+        className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12"
         id="about"
       >
         <motion.div className="flex-1 text-center md:text-left" variants={titleVariants}>
@@ -52,6 +64,18 @@ const AboutSection = () => {
             priority
           />
         </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-8 flex flex-col items-center gap-2 cursor-pointer"
+        variants={scrollIndicatorVariants}
+        animate="animate"
+        onClick={() => {
+          document.getElementById('work-history')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <span className="text-tertiary text-sm font-light">Scroll</span>
+        <DownArrowIcon className="text-primary" />
       </motion.div>
     </motion.div>
   );

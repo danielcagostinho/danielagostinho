@@ -249,25 +249,36 @@ export const projects: Project[] = [
 
 export const employers: Employer[] = [
   {
-    name: 'Intact',
+    name: 'GEOTAB',
     img: {
-      src: '/assets/employers/intact.png',
-      altText: 'Intact Insurance Logo',
+      src: '/assets/employers/geotab.jpg',
+      altText: 'GEOTAB Logo',
     },
-    position: 'Automation Test Developer I',
+    position: 'Software Developer',
     description:
-      'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-    timeLength: 'Oct 2019 - Present',
+      'Worked closely with UX designers and product owners to implement large public-facing features in Angular. Implemented a component schematic CLI tool to bootstrap new components. Fixed massive performance problems by optimizing SQL queries. Experienced with on-call, manual deployments, and triaging server performance issues. Mentored new developers.',
+    timeLength: 'Apr 2021 - Jan 2022',
   },
   {
-    name: 'McMaster',
+    name: 'Parallel Studios',
     img: {
-      src: '/assets/employers/mcmaster.jpg',
-      altText: 'McMaster University Logo',
+      src: '/assets/employers/parallel.jpg',
+      altText: 'Parallel Studios Logo',
     },
-    position: 'Data Warehouse Developer',
+    position: 'Senior Software Engineer',
     description:
-      'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-    timeLength: 'May 2017 - May 2018',
+      'Developed UI for NFT pack drop platform using TypeScript and Next.js. Integrated Web3 technologies including ethers.js, wagmi, RainbowKit, and WalletConnect. Built and launched e-commerce web store with Stripe payment integration. Spearheaded full-stack development of Spotify Wrapped-style analytics feature for NFT collections.',
+    timeLength: 'Jan 2022 - Dec 2024',
+  },
+  {
+    name: 'Wayfinder AI',
+    img: {
+      src: '/assets/employers/wayfinder.jpg',
+      altText: 'Wayfinder AI Logo',
+    },
+    position: 'Senior Software Engineer',
+    description:
+      'Lead UI engineer for AI-powered crypto transaction platform. Architected ChatGPT-like interface enabling users to interact with AI agents for complex crypto operations. Engineered real-time chat experience using custom LLMs and WebSocket implementation. Implemented modern frontend architecture with Next.js, TypeScript, Tailwind CSS, Radix UI, and Framer Motion.',
+    timeLength: 'Jan 2024 - Present',
   },
 ];
