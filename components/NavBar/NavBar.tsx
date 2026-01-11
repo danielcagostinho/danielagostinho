@@ -143,6 +143,22 @@ const NavBar = () => {
             className="hover:scale-110 transition-transform duration-200"
           >
             <a
+              href="#wine"
+              onClick={e => scrollToSection(e, 'wine')}
+              className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
+            >
+              Wine
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={navBarVariants}
+            transition={{ duration: 1, delay: 1.3 }}
+            className="hover:scale-110 transition-transform duration-200"
+          >
+            <a
               href="#contact"
               onClick={e => scrollToSection(e, 'contact')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
@@ -155,7 +171,7 @@ const NavBar = () => {
             initial="hidden"
             animate="visible"
             variants={navBarVariants}
-            transition={{ duration: 1, delay: 1.3 }}
+            transition={{ duration: 1, delay: 1.35 }}
             className="hover:scale-110 transition-transform duration-200"
           >
             <a

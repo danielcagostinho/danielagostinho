@@ -5,3 +5,4 @@ export type { Experience } from './Experience';
 export type { Education } from './Education';
 export type { Hackathon } from './Hackathon';
 export type { SkillCategory } from './SkillCategory';
+export type { WineExperience, WineCertification, WineData } from './Wine';
