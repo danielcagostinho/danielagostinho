@@ -1,4 +1,12 @@
-import { Project, Employer, Experience, Education, Hackathon, SkillCategory } from '@/types';
+import {
+  Project,
+  Employer,
+  Experience,
+  Education,
+  Hackathon,
+  SkillCategory,
+  WineData,
+} from '@/types';
 
 export const experience: Experience[] = [
   {
@@ -282,3 +290,33 @@ export const employers: Employer[] = [
     timeLength: 'Jan 2024 - Present',
   },
 ];
+
+export const wineData: WineData = {
+  experience: {
+    employer: 'Terroni',
+    position: 'Sommelier',
+    period: 'Aug 2025 - Present',
+    description:
+      'Curated wine selections and provided expert recommendations to enhance dining experiences. Developed deep knowledge of Italian wines and wine regions. Trained staff on wine service and pairing principles.',
+  },
+  certifications: [
+    {
+      name: 'WSET Level 1',
+      level: 'Level 1',
+      organization: 'Wine & Spirit Education Trust',
+      year: '2016',
+    },
+    {
+      name: 'WSET Level 2',
+      level: 'Level 2',
+      organization: 'Wine & Spirit Education Trust',
+      year: '2017',
+    },
+    {
+      name: 'WSET Level 3',
+      level: 'Level 3',
+      organization: 'Wine & Spirit Education Trust',
+      year: '2018',
+    },
+  ],
+};

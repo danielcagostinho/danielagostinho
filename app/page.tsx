@@ -3,6 +3,7 @@ import AboutSection from '@/components/AboutSection/AboutSection';
 import Projects from '@/components/Projects/Projects';
 import SkillsSection from '@/components/SkillsSection/SkillsSection';
 import WorkHistory from '@/components/WorkHistory/WorkHistory';
+import WineSection from '@/components/WineSection/WineSection';
 import ContactSection from '@/components/ContactSection/ContactSection';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <WorkHistory />
       <Projects />
       <SkillsSection />
+      <WineSection />
       <ContactSection />
     </main>
   );
