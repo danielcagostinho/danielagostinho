@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import { employers } from '@/lib/data';
+import { cn } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,17 +98,19 @@ const WorkHistory = () => {
               return (
                 <div
                   key={employer.name}
-                  className={`work-item relative flex items-center ${
+                  className={cn(
+                    'work-item relative flex items-center',
                     isLeft ? 'flex-row' : 'flex-row-reverse'
-                  }`}
+                  )}
                 >
                   {/* Content */}
-                  <div className={`w-5/12 ${isLeft ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
+                  <div className={cn('w-5/12', isLeft ? 'pr-12 text-right' : 'pl-12 text-left')}>
                     <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                       <div
-                        className={`flex items-center gap-4 mb-4 ${
+                        className={cn(
+                          'flex items-center gap-4 mb-4',
                           isLeft ? 'flex-row-reverse' : 'flex-row'
-                        }`}
+                        )}
                       >
                         <div className="relative w-16 h-16 flex-shrink-0">
                           <Image

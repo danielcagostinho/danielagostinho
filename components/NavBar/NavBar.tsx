@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 
 const NavBar = () => {
   const [showName, setShowName] = useState(false);
@@ -47,7 +48,10 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300 ${showName ? 'shadow-md' : ''}`}
+      className={cn(
+        'fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300',
+        showName && 'shadow-md'
+      )}
     >
       <nav className="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
         <div className="min-w-[200px]">
