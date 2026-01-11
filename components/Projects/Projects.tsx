@@ -13,6 +13,9 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 2, staggerChildren: 0.5 }}
     >
+      <h2 className="text-secondary font-bold text-4xl md:text-5xl lg:text-6xl text-center mb-16">
+        Projects
+      </h2>
       <div>
         {projects.map((project, idx) => (
           <Project key={project.name} project={project} index={idx} />

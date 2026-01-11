@@ -95,6 +95,22 @@ const NavBar = () => {
             className="hover:scale-110 transition-transform duration-200"
           >
             <a
+              href="#work-history"
+              onClick={e => scrollToSection(e, 'work-history')}
+              className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
+            >
+              Work
+            </a>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={navBarVariants}
+            transition={{ duration: 1, delay: 1.15 }}
+            className="hover:scale-110 transition-transform duration-200"
+          >
+            <a
               href="#projects"
               onClick={e => scrollToSection(e, 'projects')}
               className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
@@ -107,7 +123,7 @@ const NavBar = () => {
             initial="hidden"
             animate="visible"
             variants={navBarVariants}
-            transition={{ duration: 1, delay: 1.15 }}
+            transition={{ duration: 1, delay: 1.2 }}
             className="hover:scale-110 transition-transform duration-200"
           >
             <a
@@ -123,23 +139,7 @@ const NavBar = () => {
             initial="hidden"
             animate="visible"
             variants={navBarVariants}
-            transition={{ duration: 1, delay: 1.15 }}
-            className="hover:scale-110 transition-transform duration-200"
-          >
-            <a
-              href="#work-history"
-              onClick={e => scrollToSection(e, 'work-history')}
-              className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
-            >
-              Work
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={navBarVariants}
-            transition={{ duration: 1, delay: 1.2 }}
+            transition={{ duration: 1, delay: 1.25 }}
             className="hover:scale-110 transition-transform duration-200"
           >
             <a
@@ -155,7 +155,7 @@ const NavBar = () => {
             initial="hidden"
             animate="visible"
             variants={navBarVariants}
-            transition={{ duration: 1, delay: 1.25 }}
+            transition={{ duration: 1, delay: 1.3 }}
             className="hover:scale-110 transition-transform duration-200"
           >
             <a

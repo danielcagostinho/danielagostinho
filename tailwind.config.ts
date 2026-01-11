@@ -12,6 +12,8 @@ const config: Config = {
         primary: '#6380cd',
         secondary: '#000000',
         tertiary: '#3b3b3b',
+        wine: '#360A14',
+        cream: '#edddd4',
       },
       fontFamily: {
         spartan: ['"League Spartan"', 'sans-serif'],
