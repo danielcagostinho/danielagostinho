@@ -20,14 +20,12 @@ const AboutSection = () => {
     },
   };
 
-  const scrollIndicatorVariants = {
-    animate: {
-      y: [0, 10, 0],
-      transition: {
-        duration: 1.5,
-        repeat: Infinity,
-        ease: 'easeInOut',
-      },
+  const scrollIndicatorAnimation = {
+    y: [0, 10, 0],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: 'easeInOut' as const,
     },
   };
 
@@ -68,8 +66,7 @@ const AboutSection = () => {
 
       <motion.div
         className="absolute bottom-8 flex flex-col items-center gap-2 cursor-pointer"
-        variants={scrollIndicatorVariants}
-        animate="animate"
+        animate={scrollIndicatorAnimation}
         onClick={() => {
           document.getElementById('work-history')?.scrollIntoView({ behavior: 'smooth' });
         }}
