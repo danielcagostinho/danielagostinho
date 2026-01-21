@@ -123,22 +123,6 @@ const NavBar = () => {
             initial="hidden"
             animate="visible"
             variants={navBarVariants}
-            transition={{ duration: 1, delay: 1.2 }}
-            className="hover:scale-110 transition-transform duration-200"
-          >
-            <a
-              href="#skills"
-              onClick={e => scrollToSection(e, 'skills')}
-              className="text-secondary uppercase text-xs md:text-base lg:text-lg cursor-pointer"
-            >
-              Skills
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={navBarVariants}
             transition={{ duration: 1, delay: 1.25 }}
             className="hover:scale-110 transition-transform duration-200"
           >

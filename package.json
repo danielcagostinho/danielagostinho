@@ -12,7 +12,9 @@
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "typecheck": "tsc --noEmit",
     "check": "npm run lint && npm run format:check && npm run typecheck && npm run build",
-    "pre-push": "npm run format && npm run check"
+    "pre-push": "npm run format && npm run check",
+    "generate-pdf": "tsx scripts/generate-pdf.ts",
+    "generate-pdf-tailored": "tsx scripts/generate-pdf-tailored.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -33,9 +35,11 @@
     "eslint-config-next": "^15.1.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "md-to-pdf": "^5.2.5",
     "postcss": "^8.4.49",
     "prettier": "^3.7.4",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

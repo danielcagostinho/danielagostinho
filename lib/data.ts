@@ -16,15 +16,15 @@ export const experience: Experience[] = [
     startDate: 'Jan 2024',
     endDate: 'Present',
     bullets: [
-      'Lead UI engineer for AI-powered crypto transaction platform, working with team of 2-3 frontend engineers',
-      'Architected and built ChatGPT-like interface enabling users to interact with AI agents for complex crypto operations including smart contract deployment, Hyperliquid trading, Polymarket trading, and automated trading strategies',
-      'Engineered real-time chat experience using custom LLMs and WebSocket implementation for seamless agent interactions',
-      'Implemented modern frontend architecture with Next.js, TypeScript, Tailwind CSS, Radix UI, and Framer Motion using Context API for state management',
+      'Led UI development of ChatGPT-like interface for AI agents that handle smart contract deployment, Hyperliquid trading, Polymarket trading, and automated trading strategies',
+      'Implemented real-time chat using custom LLMs and WebSocket for agent interactions',
+      'Defined frontend architecture including state management patterns, component organization, API design, and routing structure adopted across the engineering team',
+      'Mentored junior developers through code reviews and pair programming on best practices and problem-solving approaches',
     ],
     technologies: [
       'Next.js',
       'TypeScript',
-      'React',
+      'React.js',
       'Tailwind CSS',
       'Radix UI',
       'Framer Motion',
@@ -37,18 +37,18 @@ export const experience: Experience[] = [
     company: 'Parallel Studios',
     position: 'Senior Software Engineer',
     location: 'Toronto, Canada',
-    startDate: 'Jan 2022',
+    startDate: 'Apr 2022',
     endDate: 'Dec 2024',
     bullets: [
-      'Developed UI for NFT pack drop platform using TypeScript and Next.js, facilitating seamless user experience for digital collectible purchases',
-      'Integrated Web3 technologies including ethers.js, wagmi, RainbowKit, and WalletConnect to enable secure blockchain transaction submissions',
-      'Built and launched e-commerce web store with Stripe payment integration, handling end-to-end payment processing and inventory management',
-      'Spearheaded full-stack development of Spotify Wrapped-style analytics feature, aggregating NFT collection stats, trading activity, and financial metrics across entire user base to deliver personalized user summaries',
+      'Built NFT pack drop platform with purchase and redemption features, handling smart contract interactions for users to redeem pack NFTs',
+      'Integrated Web3 wallet connections (ethers.js, wagmi, RainbowKit, WalletConnect) for blockchain transactions',
+      'Built e-commerce store with Stripe payment integration handling checkout and payment processing',
+      'Developed Spotify Wrapped-style analytics feature showing users their NFT collection stats, trading activity, and financial metrics',
     ],
     technologies: [
       'TypeScript',
       'Next.js',
-      'React',
+      'React.js',
       'ethers.js',
       'wagmi',
       'RainbowKit',
@@ -64,12 +64,10 @@ export const experience: Experience[] = [
     startDate: 'Apr 2021',
     endDate: 'Jan 2022',
     bullets: [
-      'Worked closely with UX designers and product owners to implement large public-facing features in Angular while following Figma mockups',
-      'Implemented a component schematic CLI tool to reduce time to bootstrap new components by pre configuring templated HTML, and setting up required routes and services',
-      'Fixed massive performance problems reducing minutes down to seconds by optimizing SQL queries',
-      'Experience with on-call, manual deployments, triaging server performance issues, and investigating server downtimes using memory dumps and PerfViews',
-      'Hosted design discussions regarding new technologies, bad code practices within the application and used the opportunity to improve overall knowledge of the department',
-      'Mentored and spent time teaching and helping new developers',
+      'Built internal admin platform features in Angular including transaction processing, ordering workflows, and shipping management for thousands of employees',
+      'Created component schematic CLI tool that reduced setup time for new components',
+      'Optimized SQL queries, cutting execution time from minutes to seconds',
+      'Mentored new developers and ran technical discussions on architecture and coding practices',
     ],
     technologies: [
       'C#',
@@ -84,15 +82,14 @@ export const experience: Experience[] = [
   },
   {
     company: 'Intact Financial Corporation',
-    position: 'Test Automation Developer I',
+    position: 'Test Automation Developer',
     location: 'Toronto, Canada',
     startDate: 'Oct 2019',
     endDate: 'Mar 2021',
     bullets: [
-      'Worked with development team and QA analysts to create automated test scripts and suites to identify, diagnose and report potentially disastrous system errors for a large-scale insurance application',
-      'Used React.js to develop a reporting dashboard to provide management with a consolidated view of performance and regression results, increasing the visibility of defects, reducing the time required to fix them, resulting in faster feature development',
-      "Was solely responsible for the execution and maintenance of the regression suite for Intact's legacy application",
-      'Mentored newly-hired automation developer, identifying opportunities for growth and actively taught skills that would enable them to effectively contribute to rapidly growing test automation framework',
+      'Built automated test framework and suites for large-scale insurance application',
+      'Developed React.js dashboard showing performance and regression test results',
+      'Owned execution and maintenance of regression suite for legacy application',
     ],
     technologies: ['React.js', 'Selenium', 'Jest'],
   },
@@ -103,9 +100,8 @@ export const experience: Experience[] = [
     startDate: 'May 2017',
     endDate: 'May 2018',
     bullets: [
-      'Designed and implemented data extraction and transformation processes to support a large-scale university application',
-      'Developed web-tools to enhance the student experience (currently used by over 30,000 users)',
-      'Generated reports and queries in response to business requirements',
+      'Built data extraction and transformation processes for university application',
+      'Developed web tools used by 30,000+ students for course planning and registration',
     ],
     technologies: [
       'React.js',
@@ -148,36 +144,29 @@ export const hackathons: Hackathon[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: 'Front End',
+    category: 'Frontend',
     skills: [
+      'TypeScript',
       'React.js',
       'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'Angular 12',
+      'Angular',
       'React Native',
+      'Tailwind CSS',
       'Radix UI',
       'Framer Motion',
-      'Javascript (ES6)',
-      'Sass (CSS3)',
-      'HTML5',
     ],
   },
   {
-    category: 'Back End',
-    skills: ['Node.js', 'Python', 'Django', 'PostgreSQL', 'C#', 'Java'],
+    category: 'Backend',
+    skills: ['Python (Django)', 'C#', 'Java', 'Node.js'],
   },
   {
-    category: 'Web3 & Blockchain',
+    category: 'Web3',
     skills: ['ethers.js', 'wagmi', 'RainbowKit', 'WalletConnect', 'Smart Contracts'],
   },
   {
-    category: 'Testing',
-    skills: ['Jest', 'Selenium', 'Cypress'],
-  },
-  {
-    category: 'Other',
-    skills: ['Git', 'WebSocket', 'Stripe', 'Docker', 'Jenkins', 'Bash', 'PowerShell'],
+    category: 'Tools',
+    skills: ['Git', 'Docker', 'WebSocket', 'Jest', 'Cypress', 'Selenium', 'PostgreSQL'],
   },
 ];
 
@@ -264,7 +253,7 @@ export const employers: Employer[] = [
     },
     position: 'Software Developer',
     description:
-      'Worked closely with UX designers and product owners to implement large public-facing features in Angular. Implemented a component schematic CLI tool to bootstrap new components. Fixed massive performance problems by optimizing SQL queries. Experienced with on-call, manual deployments, and triaging server performance issues. Mentored new developers.',
+      'Built internal admin platform features in Angular including transaction processing, ordering workflows, and shipping management for thousands of employees. Created component schematic CLI tool that reduced setup time for new components. Optimized SQL queries, cutting execution time from minutes to seconds.',
     timeLength: 'Apr 2021 - Jan 2022',
   },
   {
@@ -275,8 +264,8 @@ export const employers: Employer[] = [
     },
     position: 'Senior Software Engineer',
     description:
-      'Developed UI for NFT pack drop platform using TypeScript and Next.js. Integrated Web3 technologies including ethers.js, wagmi, RainbowKit, and WalletConnect. Built and launched e-commerce web store with Stripe payment integration. Spearheaded full-stack development of Spotify Wrapped-style analytics feature for NFT collections.',
-    timeLength: 'Jan 2022 - Dec 2024',
+      'Built NFT pack drop platform with purchase and redemption features, handling smart contract interactions for users to redeem pack NFTs. Integrated Web3 wallet connections for blockchain transactions. Built e-commerce store with Stripe payment integration. Developed Spotify Wrapped-style analytics feature showing users their NFT collection stats, trading activity, and financial metrics.',
+    timeLength: 'Apr 2022 - Dec 2024',
   },
   {
     name: 'Wayfinder AI',
@@ -286,7 +275,7 @@ export const employers: Employer[] = [
     },
     position: 'Senior Software Engineer',
     description:
-      'Lead UI engineer for AI-powered crypto transaction platform. Architected ChatGPT-like interface enabling users to interact with AI agents for complex crypto operations. Engineered real-time chat experience using custom LLMs and WebSocket implementation. Implemented modern frontend architecture with Next.js, TypeScript, Tailwind CSS, Radix UI, and Framer Motion.',
+      'Led UI development of ChatGPT-like interface for AI agents that handle smart contract deployment, Hyperliquid trading, Polymarket trading, and automated trading strategies. Implemented real-time chat using custom LLMs and WebSocket. Defined frontend architecture including state management patterns, component organization, API design, and routing structure adopted across the engineering team.',
     timeLength: 'Jan 2024 - Present',
   },
 ];
